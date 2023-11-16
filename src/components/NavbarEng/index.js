@@ -1,0 +1,1 @@
+export {default as NavbarEng} from "./NavbarPage.vue"

@@ -1,0 +1,121 @@
+<template>
+  <ul class="footer">
+    <div>
+      <p>location</p>
+      <li>Tashkent city, Shakhrisabz street 16A</li>
+    </div>
+    <div>
+      <p>Phone number:</p>
+      <li>+998 93 982 50 01</li>
+    </div>
+    <div>
+      <p>Email</p>
+      <li>info@icangroup.uz</li>
+    </div>
+    <div>
+      <p>Social network</p>
+      <div class="contacts">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+  </ul>
+  <hr />
+
+  <div class="muallif">
+    <p>2023 All rights reserved.</p>
+    <p>Design by <span style="color: blue">Mazmoon Group</span></p>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped>
+.footer {
+  margin-top: 50px;
+  display: grid;
+}
+.footer p {
+  font-size: 14px;
+  color: #5a6161;
+  font-weight: 500;
+}
+.footer li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer .contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.muallif {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 300px) {
+  .footer {
+    grid-template-columns: 4fr 1fr;
+  }
+  .footer p {
+    margin: 0;
+    font-size: 12px;
+  }
+  .footer li {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .footer,
+  .muallif {
+    padding: 20px 30px;
+  }
+  .footer .contacts {
+    gap: 20px;
+    margin-top: 5px;
+  }
+
+  .muallif p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  .footer .contacts {
+    gap: 40px;
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .footer li {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer,
+  .muallif {
+    padding: 20px 150px;
+  }
+  .footer .contacts {
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    grid-template-columns: 2fr 1.7fr 1.7fr 1fr;
+  }
+}
+</style>

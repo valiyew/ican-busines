@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: swap;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/TTFIRSNEUE-BLACK.TTF') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/TTFIRSNEUE-BOLD.TTF') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/TTFIRSNEUE-MEDIUM.TTF') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/TTFIRSNEUE-REGULAR.TTF') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/TTFIRSNEUE-LIGHT.TTF') format('woff2');
+}
