@@ -1,8 +1,11 @@
 <template>
   <div class="containerr">
     <div class="news" style="margin-top: 100px">
-      <h1>Yangiliklar</h1>
-      <div style="display: flex; align-items: center; gap: 15px">
+      <h1 style="transition: 2s" v-motion-slide-visible-right>Yangiliklar</h1>
+      <div
+        style="display: flex; align-items: center; gap: 15px; transition: 2s"
+        v-motion-slide-visible-left
+      >
         <button
           style="
             background: #f5f5f5;
@@ -31,7 +34,11 @@
     </div>
 
     <div class="row">
-      <div class="owl-carousel owl-theme" style="margin-top: 50px">
+      <div
+        class="owl-carousel owl-theme"
+        style="margin-top: 50px; transition: 2s"
+        v-motion-slide-visible-bottom
+      >
         <div class="item">
           <div class="card">
             <div class="card-body">
@@ -181,7 +188,7 @@ export default {
 
       setInterval(() => {
         owlCarousel.value.trigger('next.owl.carousel')
-      }, 3000)
+      }, 7000)
     })
 
     const nextSlide = () => {

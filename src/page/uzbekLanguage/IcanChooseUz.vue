@@ -1,6 +1,6 @@
 <template>
   <div class="icanShooseBox">
-    <div class="about">
+    <div style="transition: 2s" class="about" v-motion-slide-visible-right>
       <h1 style="display: flex">
         <span>Nima uchun ican biznesini tanlaysiz </span>
         <img class="check" src="../../assets/images/check.svg" alt="" />
@@ -10,7 +10,7 @@
 
     <div class="icanChoose">
       <div class="left">
-        <div class="a">
+        <div style="transition: 2s" class="a" v-motion-slide-visible-top>
           <div class="title">
             <h2>Barcha boshqaruv vositalari onlayn</h2>
             <p style="margin-top: 20px">
@@ -25,7 +25,7 @@
           <img style="border-radius: 15px" src="../../assets/images/imgA.png" alt="" />
         </div>
 
-        <div class="AandBSection">
+        <div style="transition: 2s" class="AandBSection" v-motion-slide-visible-bottom>
           <div class="b" style="position: relative; height: 350px">
             <div style="width: 100%">
               <h2>Barqarorlik omborini boshqarish</h2>
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div class="right">
+      <div style="transition: 2s" class="right" v-motion-slide-visible-right>
         <div class="sklad">
           <div>
             <h2>Barqarorlik omborini boshqarish</h2>
@@ -74,7 +74,6 @@
 }
 
 .about h1 {
-  
   display: flex;
   align-items: center;
   gap: 10px;
@@ -153,7 +152,6 @@
 }
 .title button:hover {
   transform: scale(1.01);
-  
 }
 
 .AandBSection {

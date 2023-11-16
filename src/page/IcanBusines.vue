@@ -1,7 +1,7 @@
 <template>
   <div class="icanBusines">
     <div class="bg">
-      <div class="title">
+      <div class="title" style="transition: 2s;" v-motion-slide-visible-top >
         <div class="about">
           <h1>
             <span>Что такое ican business?</span>
@@ -19,7 +19,7 @@
           <i class="fa-solid fa-phone" style="margin-right: 10px"></i> <span>Связаться с нами</span>
         </button>
       </div>
-      <div class="img">
+      <div style="transition: 2s;" class="img" v-motion-slide-visible-bottom>
         <img class="imgBg" src="../assets/images/macBg.png" alt="" />
         <img class="imgMac" src="../assets/images/macAir.png" alt="" />
       </div>

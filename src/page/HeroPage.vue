@@ -35,7 +35,7 @@ import { Navbar } from '../components/index'
 export default {
   components: {
     Navbar
-  }
+  },
 }
 </script>
 
@@ -241,7 +241,6 @@ export default {
   .about {
     gap: 38px;
   }
-  
 }
 
 @media screen and (min-width: 576px) {

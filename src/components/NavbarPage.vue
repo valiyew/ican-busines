@@ -232,6 +232,7 @@ select option {
     width: 100%;
     height: 0;
     transition: 0.5s;
+    z-index: 1;
   }
 
   .mainSidebar div p {

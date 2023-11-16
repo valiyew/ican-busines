@@ -1,6 +1,6 @@
 <template>
   <div class="maps">
-    <div class="left">
+    <div class="left" style="transition: 2s;" v-motion-slide-visible-left>
       <div class="about">
         <h1>
           <span>Связаться с нами </span>
@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="right">
+    <div class="right" style="transition: 2s;" v-motion-slide-visible-right>
       <div class="text">
         <h1>Партнерство с нами</h1>
         <p>
