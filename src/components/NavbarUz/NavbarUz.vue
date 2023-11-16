@@ -75,7 +75,9 @@
     <div class="language" :class="{ remove: openMain }">
       <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
 
-      <span>Biz bilan bog'lanish </span>
+      <router-link to="/contact">
+        <span style="cursor: pointer">Biz bilan bog'lanish </span>
+      </router-link>
       <div class="mains">
         <button @click="openSidebar" class="main">
           <i class="fa-solid fa-bars"></i>

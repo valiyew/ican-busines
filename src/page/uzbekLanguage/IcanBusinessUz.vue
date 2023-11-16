@@ -84,8 +84,8 @@
   background: #18b4ca;
   transition: 0.5s;
 }
-.title button:hover {
-  transform: scale(1.01);
+.title button:active {
+  transform: scale(1.2);
 }
 
 .title .absaluteBox {

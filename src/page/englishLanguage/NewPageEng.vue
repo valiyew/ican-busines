@@ -48,19 +48,21 @@
                     <h3>A complete guide to working from home with our platform</h3>
                     <p>September 17, 2023</p>
                   </div>
-                  <button
-                    style="
-                      background: #fff;
-                      width: 50px;
-                      height: 50px;
-                      border-radius: 50%;
-                      font-size: 14px;
-                      font-weight: 500;
-                      margin-top: 80px;
-                    "
-                  >
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </button>
+                  <router-link to="/news">
+                    <button
+                      style="
+                        background: #fff;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-top: 80px;
+                      "
+                    >
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                  </router-link>
                 </div>
               </div>
               <img src="../../assets/images/girlImg.png" alt="" height="200px" />
@@ -80,19 +82,21 @@
                     <h3>A complete guide to working from home with our platform</h3>
                     <p>September 17, 2023</p>
                   </div>
-                  <button
-                    style="
-                      background: #fff;
-                      width: 50px;
-                      height: 50px;
-                      border-radius: 50%;
-                      font-size: 14px;
-                      font-weight: 500;
-                      margin-top: 80px;
-                    "
-                  >
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </button>
+                  <router-link to="/news">
+                    <button
+                      style="
+                        background: #fff;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-top: 80px;
+                      "
+                    >
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                  </router-link>
                 </div>
               </div>
               <img src="../../assets/images/newPageImg.png" alt="" height="200px" />
@@ -112,19 +116,21 @@
                     <h3>A complete guide to working from home with our platform</h3>
                     <p>September 17, 2023</p>
                   </div>
-                  <button
-                    style="
-                      background: #fff;
-                      width: 50px;
-                      height: 50px;
-                      border-radius: 50%;
-                      font-size: 14px;
-                      font-weight: 500;
-                      margin-top: 80px;
-                    "
-                  >
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </button>
+                  <router-link to="/news">
+                    <button
+                      style="
+                        background: #fff;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-top: 80px;
+                      "
+                    >
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                  </router-link>
                 </div>
               </div>
               <img src="../../assets/images/girlImg.png" alt="" height="200px" />

@@ -114,11 +114,11 @@ export default {
   transition: 0.3s;
 }
 
-.call:hover {
-  transform: scale(1.01);
+.call:active {
+  transform: scale(1.1);
 }
-.addUser:hover {
-  transform: scale(1.01);
+.addUser:active {
+  transform: scale(1.1);
 }
 
 .addUser:hover img {

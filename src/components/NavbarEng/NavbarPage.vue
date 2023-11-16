@@ -53,9 +53,11 @@
       <li style="margin-left: 30px">
         <img src="../../assets/images/agenda.svg" alt="" /> <span>About the product </span>
       </li>
+      <router-link to="/news">
         <li @click="openNews">
           <img src="../../assets/images/note-2.svg" alt="" /> <span>News</span>
         </li>
+      </router-link>
 
       <router-link to="/partner">
         <li @click="openPart">
@@ -73,7 +75,9 @@
     <div class="language" :class="{ remove: openMain }">
       <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
 
-      <span>Connect with us </span>
+      <router-link to="/contact">
+        <span style="cursor: pointer">Connect with us </span>
+      </router-link>
       <div class="mains">
         <button @click="openSidebar" class="main">
           <i class="fa-solid fa-bars"></i>
@@ -165,7 +169,7 @@ ul li {
   font-size: 16px;
   color: #fff;
   font-family: 'TT Firs Neue';
-  
+
   font-weight: 400;
 }
 

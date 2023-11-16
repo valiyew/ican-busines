@@ -148,8 +148,8 @@ export default {}
   background: #18b4ca;
   transition: 0.5s;
 }
-.left button:hover {
-  transform: scale(1.01);
+.left button:active {
+  transform: scale(1.2);
 }
 
 .left .contacts {
@@ -198,8 +198,8 @@ export default {}
   background: #18b4ca;
   transition: 0.5s;
 }
-.right button:hover {
-  transform: scale(1.01);
+.right button:active {
+  transform: scale(1.2);
 }
 .right .img {
   position: relative;

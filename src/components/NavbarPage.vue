@@ -54,19 +54,19 @@
         <img src="../assets/images/agenda.svg" alt="" /> <span>О продукте</span>
       </li>
       <router-link to="/news">
-        <li @click="openNews">
+        <li >
           <img src="../assets/images/note-2.svg" alt="" /> <span>Новости</span>
         </li>
       </router-link>
 
       <router-link to="/partner">
-        <li @click="openPart">
+        <li >
           <img src="../assets/images/shield-tick.svg" alt="" /> <span>Преимущества</span>
         </li>
       </router-link>
 
       <router-link to="contact">
-        <li @click="openCall">
+        <li >
           <img src="../assets/images/cal.svg" alt="" /> <span>Связаться с нами</span>
         </li>
       </router-link>
@@ -74,8 +74,10 @@
 
     <div class="language" :class="{ remove: openMain }">
       <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
-
-      <span>Связаться с нами</span>
+      
+      <router-link to="/contact">
+        <span style="cursor: pointer;">Связаться с нами</span>
+      </router-link>
       <div class="mains">
         <button @click="openSidebar" class="main">
           <i class="fa-solid fa-bars"></i>
@@ -89,21 +91,6 @@
 import { ref } from 'vue'
 import SelectComponent from '../components/SelectComponent.vue'
 
-const partModal = ref(false)
-const openPart = () => {
-  partModal.value = false
-  setTimeout(() => {
-    partModal.value = true
-  })
-}
-
-const callModal = ref(false)
-const openCall = () => {
-  callModal.value = false
-  setTimeout(() => {
-    callModal.value = true
-  })
-}
 
 const openMain = ref(false)
 const openSidebar = () => {

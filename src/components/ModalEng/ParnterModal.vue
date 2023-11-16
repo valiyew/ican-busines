@@ -25,34 +25,29 @@
           <div class="experience">
             <div>
               <p style="display: flex; gap: 5px; align-items: center">
-                <img src="../assets/images/status-up.svg" alt="" /> <span>Высокий опыт работы</span>
+                <img src="../../assets/images/status-up.svg" alt="" /> <span>Высокий опыт работы</span>
               </p>
               <p style="display: flex; gap: 5px; align-items: center">
-                <img src="../assets/images/lamp-charge.svg" alt="" />
+                <img src="../../assets/images/lamp-charge.svg" alt="" />
                 <span>Высокий опыт работы</span>
               </p>
             </div>
             <div>
               <p style="display: flex; gap: 5px; align-items: center">
-                <img src="../assets/images/star.svg" alt="" /> <span>Высокий опыт работы</span>
+                <img src="../../assets/images/star.svg" alt="" /> <span>Высокий опыт работы</span>
               </p>
               <p style="display: flex; gap: 5px; align-items: center">
-                <img src="../assets/images/layer.svg" alt="" /> <span>Высокий опыт работы</span>
+                <img src="../../assets/images/layer.svg" alt="" /> <span>Высокий опыт работы</span>
               </p>
             </div>
           </div>
-          <div class="sponsor">
-            <h1>Our partners</h1>
-            <div class="partners">
-              <img src="../../assets/images/frame11.png" alt="" />
-              <img src="../../assets/images/frame12.png" alt="" />
-              <img src="../../assets/images/frame13.png" alt="" />
-              <img src="../../assets/images/frame14.png" alt="" />
-              <img src="../../assets/images/frame15.png" alt="" />
-              <img src="../../assets/images/frame16.png" alt="" />
-              <img src="../../assets/images/frame17.png" alt="" />
-              <img src="../../assets/images/frame18.png" alt="" />
-              <img src="../../assets/images/playmobile.png" alt="" />
+          <div class="wrapper">
+            <div class="slider" style="margin-top: 50px">
+              <div v-for="(item, index) in partnerItems" :key="index" class="slide-track">
+                <div class="slide">
+                  <img :src="item.image" alt="" />
+                </div>
+              </div>
             </div>
           </div>
 
@@ -98,16 +93,58 @@ const openModal = ref(true)
 const closeModal = () => {
   openModal.value = false
 }
+
+const partnerItems = [
+  { image: '/src/assets/images/frame11.png' },
+  { image: '/src/assets/images/frame12.png' },
+  { image: '/src/assets/images/frame13.png' },
+  { image: '/src/assets/images/frame14.png' },
+  { image: '/src/assets/images/frame15.png' },
+  { image: '/src/assets/images/frame16.png' },
+  { image: '/src/assets/images/frame17.png' },
+  { image: '/src/assets/images/frame18.png' },
+  { image: '/src/assets/images/playmobile.png' },
+  { image: '/src/assets/images/frame11.png' },
+  { image: '/src/assets/images/frame12.png' },
+  { image: '/src/assets/images/frame13.png' },
+  { image: '/src/assets/images/frame14.png' },
+  { image: '/src/assets/images/frame15.png' },
+  { image: '/src/assets/images/frame16.png' },
+  { image: '/src/assets/images/frame17.png' },
+  { image: '/src/assets/images/frame18.png' },
+  { image: '/src/assets/images/playmobile.png' }
+]
 </script>
 
 <style scoped>
-.partners {
+.wrapper {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-.partners img {
-  width: 100px;
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  animation: RunSlider 20s linear infinite;
+}
+
+.slider .slide-track .slide {
+  width: 200px;
+}
+
+@keyframes RunSlider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-200px * 9));
+  }
 }
 
 .modal {
