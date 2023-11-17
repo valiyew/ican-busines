@@ -136,7 +136,6 @@ export default {
 .sponsors {
   width: 100%;
 }
-
 @media screen and (max-width: 1200px) {
   .about .img {
     height: 500px;
@@ -260,12 +259,18 @@ export default {
   }
 }
 
+@media screen and (min-width: 890px) {
+  .about .img {
+    height: 643px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .about {
     gap: 58px;
   }
   .about .img {
-    height: 570px;
+    height: 643px;
   }
 }
 
@@ -274,7 +279,7 @@ export default {
     gap: 68px;
   }
   .about .img {
-    height: 568px;
+    height: 643px;
   }
 }
 
