@@ -22,7 +22,7 @@
       </div>
       <div>
         <p style="display: flex; align-items: center; gap: 10px">
-          <img src="../assets/images/agendaprocust.svg" alt="" /> <span>О продукте</span>
+          <img src="../assets/images/agendaprocust.svg" alt="" /> <span>О продуктеeeeee</span>
         </p>
         <router-link to="news">
           <p style="display: flex; align-items: center; gap: 10px">
