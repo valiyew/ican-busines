@@ -3,43 +3,101 @@
 
   <div class="wrapper">
     <div class="slider" style="margin-top: 50px">
-      <div v-for="(item, index) in partnerItems" :key="index" class="slide-track">
+      <div class="slide-track">
         <div class="slide">
-          <img :src="item.image" alt="" />
+          <img src="../assets/images/frame11.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame12.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame13.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame14.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame15.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame16.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame17.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame18.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/playmobile.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame11.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame12.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame13.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame14.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame15.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame16.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame17.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/frame18.png" alt="" />
+        </div>
+      </div>
+      <div class="slide-track">
+        <div class="slide">
+          <img src="../assets/images/playmobile.png" alt="" />
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      partnerItems: [
-        { image: '/src/assets/images/frame11.png' },
-        { image: '/src/assets/images/frame12.png' },
-        { image: '/src/assets/images/frame13.png' },
-        { image: '/src/assets/images/frame14.png' },
-        { image: '/src/assets/images/frame15.png' },
-        { image: '/src/assets/images/frame16.png' },
-        { image: '/src/assets/images/frame17.png' },
-        { image: '/src/assets/images/frame18.png' },
-        { image: '/src/assets/images/playmobile.png' },
-        { image: '/src/assets/images/frame11.png' },
-        { image: '/src/assets/images/frame12.png' },
-        { image: '/src/assets/images/frame13.png' },
-        { image: '/src/assets/images/frame14.png' },
-        { image: '/src/assets/images/frame15.png' },
-        { image: '/src/assets/images/frame16.png' },
-        { image: '/src/assets/images/frame17.png' },
-        { image: '/src/assets/images/frame18.png' },
-        { image: '/src/assets/images/playmobile.png' }
-      ]
-    }
-  }
-}
-</script>
+<script></script>
 
 <style scoped>
 h1 {

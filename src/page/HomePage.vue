@@ -32,6 +32,7 @@ import { HomeEng } from './englishLanguage/index'
 import { Hero, IcanBusines, IcanChoose, NewPage, Partner, MapsPage, Footer } from './index'
 import { HomeUz } from './uzbekLanguage/index'
 
+
 // eslint-disable-next-line no-unused-vars
 const components = {
   Hero,

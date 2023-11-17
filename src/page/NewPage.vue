@@ -191,10 +191,6 @@ export default {
           }
         }
       })
-
-      setInterval(() => {
-        owlCarousel.value.trigger('next.owl.carousel')
-      }, 7000)
     })
 
     const nextSlide = () => {
