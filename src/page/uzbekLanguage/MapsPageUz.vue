@@ -1,6 +1,6 @@
 <template>
   <div class="maps">
-    <div class="left" style="transition: 2s" v-motion-slide-visible-left>
+    <div class="left" style="transition: 2s" v-motion-slide-visible-top>
       <div class="about">
         <h1>
           <span>Biz bilan bog'laning</span>
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="right" style="transition: 2s" v-motion-slide-visible-right>
+    <div class="right" style="transition: 2s" v-motion-slide-visible-bottom>
       <div class="text">
         <h1>Biz bilan hamkorlik</h1>
         <p>

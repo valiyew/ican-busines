@@ -1,6 +1,6 @@
 <template>
   <div class="icanShooseBox">
-    <div style="transition: 2s" class="about" v-motion-slide-visible-right>
+    <div style="transition: 2s" class="about" v-motion-slide-visible-top>
       <h1 style="display: flex">
         <span>Nima uchun ican biznesini tanlaysiz </span>
         <img class="check" src="../../assets/images/check.svg" alt="" />
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div style="transition: 2s" class="right" v-motion-slide-visible-right>
+      <div style="transition: 2s" class="right" v-motion-slide-visible-bottom>
         <div class="sklad">
           <div>
             <h2>Barqarorlik omborini boshqarish</h2>
