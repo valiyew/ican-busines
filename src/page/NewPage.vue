@@ -1,10 +1,10 @@
 <template>
-  <div class="containerr">
+  <div id="news" class="containerr">
     <div class="news" style="margin-top: 100px">
-      <h1 style="transition: 2s" v-motion-slide-visible-right>Новости</h1>
+      <h1 style="transition: 0.5s" v-motion-slide-visible-once-right>Новости</h1>
       <div
-        style="display: flex; align-items: center; gap: 15px; transition: 2s"
-        v-motion-slide-visible-left
+        style="display: flex; align-items: center; gap: 15px; transition: 0.5s"
+        v-motion-slide-visible-once-left
       >
         <button
           style="
@@ -35,8 +35,8 @@
     <div class="row">
       <div
         class="owl-carousel owl-theme"
-        style="margin-top: 50px; transition: 2s"
-        v-motion-slide-visible-bottom
+        style="margin-top: 50px; transition: 0.5s"
+        v-motion-slide-visible-once-bottom
       >
         <div class="item">
           <div class="card">

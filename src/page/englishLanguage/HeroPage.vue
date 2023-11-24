@@ -11,10 +11,12 @@
           </p>
         </div>
         <div class="buttons">
-          <button class="call">
-            <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
-            <span>Connect with us </span>
-          </button>
+          <router-link to="/contact">
+            <button class="call">
+              <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+              <span>Connect with us </span>
+            </button>
+          </router-link>
           <button class="addUser">
             <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
             <span>Become a parthen </span>
@@ -106,7 +108,6 @@ import { NavbarEng } from '../../components/NavbarEng/index'
   background: none;
   transition: 0.3s;
 }
-
 
 .call:active {
   transform: scale(1.1);

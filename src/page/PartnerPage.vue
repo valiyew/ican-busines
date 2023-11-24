@@ -1,7 +1,7 @@
 <template>
-  <h1 style="margin-top: 80px; transition: 2s" v-motion-slide-visible-top>Наши партнеры</h1>
+  <h1 id="partner" style="margin-top: 80px; transition: 0.5s" v-motion-slide-visible-once-top>Наши партнеры</h1>
 
-  <div class="wrapper">
+  <div  class="wrapper">
     <div class="slider" style="margin-top: 50px">
       <div class="slide-track">
         <div class="slide">

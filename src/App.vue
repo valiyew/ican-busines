@@ -4,7 +4,13 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
+<main class="wow">
   <RouterView />
+</main>
 </template>
 
-<style scoped></style>
+<style >
+.wow{
+  overflow-x: hidden;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div class="icanBusines">
     <div class="bg">
-      <div class="title" style="transition: 2s" v-motion-slide-visible-top>
+      <div class="title" style="transition: 0.5s" v-motion-slide-visible-top>
         <div class="about">
           <h1>
             <span>Ican biznes nima? </span>
@@ -20,7 +20,7 @@
           <span>Biz bilan bog'laning </span>
         </button>
       </div>
-      <div style="transition: 2s" class="img" v-motion-slide-visible-bottom>
+      <div style="transition: 0.5s" class="img" v-motion-slide-visible-bottom>
         <img class="imgBg" src="../../assets/images/macBg.png" alt="" />
         <img class="imgMac" src="../../assets/images/macAir.png" alt="" />
       </div>

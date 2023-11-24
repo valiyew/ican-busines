@@ -12,10 +12,12 @@
           </p>
         </div>
         <div class="buttons">
-          <button class="call">
-            <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
-            <span>Biz bilan bog'lanish </span>
-          </button>
+          <router-link to="/contact">
+            <button class="call">
+              <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+              <span>Biz bilan bog'lanish</span>
+            </button>
+          </router-link>
           <button class="addUser">
             <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
             <span>Partenaga aylaning </span>

@@ -24,21 +24,18 @@
         <p style="display: flex; align-items: center; gap: 10px">
           <img src="../assets/images/agendaprocust.svg" alt="" /> <span>О продукте</span>
         </p>
-        <router-link to="news">
-          <p style="display: flex; align-items: center; gap: 10px">
-            <img src="../assets/images/note-2news.svg" alt="" /> <span>Новости</span>
-          </p>
-        </router-link>
-        <router-link to="partner">
-          <p style="display: flex; align-items: center; gap: 10px">
-            <img src="../assets/images/shield-tickcheck.svg" alt="" /> <span>Преимущества</span>
-          </p>
-        </router-link>
-        <router-link to="contact">
-          <p style="display: flex; align-items: center; gap: 10px">
-            <img src="../assets/images/callMain.svg" alt="" /> <span>Связаться с нами</span>
-          </p>
-        </router-link>
+        <p style="display: flex; align-items: center; gap: 10px">
+          <img src="../assets/images/note-2news.svg" alt="" />
+          <span><a href="#news">Новости</a></span>
+        </p>
+        <p style="display: flex; align-items: center; gap: 10px">
+          <img src="../assets/images/shield-tickcheck.svg" alt="" />
+          <span><a href="#partner">Преимущества</a></span>
+        </p>
+        <p style="display: flex; align-items: center; gap: 10px">
+          <img src="../assets/images/callMain.svg" alt="" />
+          <span><a href="#contact">Связаться с нами</a></span>
+        </p>
       </div>
       <div style="display: flex; flex-direction: column; gap: 30px">
         <button class="call"><i class="fa-solid fa-phone"></i> Связаться с нами</button>
@@ -53,30 +50,26 @@
       <li style="margin-left: 30px">
         <img src="../assets/images/agenda.svg" alt="" /> <span>О продукте</span>
       </li>
-      <router-link to="/news">
-        <li >
-          <img src="../assets/images/note-2.svg" alt="" /> <span>Новости</span>
-        </li>
-      </router-link>
+      <li>
+        <img src="../assets/images/note-2.svg" alt="" /> <span><a href="#news">Новости</a></span>
+      </li>
 
-      <router-link to="/partner">
-        <li >
-          <img src="../assets/images/shield-tick.svg" alt="" /> <span>Преимущества</span>
-        </li>
-      </router-link>
+      <li>
+        <img src="../assets/images/shield-tick.svg" alt="" />
+        <span><a href="#partner">Преимущества</a></span>
+      </li>
 
-      <router-link to="contact">
-        <li >
-          <img src="../assets/images/cal.svg" alt="" /> <span>Связаться с нами</span>
-        </li>
-      </router-link>
+      <li>
+        <img src="../assets/images/cal.svg" alt="" />
+        <span><a href="#contact">Связаться с нами</a></span>
+      </li>
     </ul>
 
     <div class="language" :class="{ remove: openMain }">
       <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
-      
+
       <router-link to="/contact">
-        <span style="cursor: pointer;">Связаться с нами</span>
+        <span style="cursor: pointer">Связаться с нами</span>
       </router-link>
       <div class="mains">
         <button @click="openSidebar" class="main">
@@ -90,7 +83,6 @@
 <script setup>
 import { ref } from 'vue'
 import SelectComponent from '../components/SelectComponent.vue'
-
 
 const openMain = ref(false)
 const openSidebar = () => {

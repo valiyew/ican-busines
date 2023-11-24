@@ -1,6 +1,6 @@
 <template>
-  <div class="maps">
-    <div class="left" style="transition: 2s;" v-motion-slide-visible-top>
+  <div class="maps" id="contact">
+    <div class="left" style="transition: 0.5s" v-motion-slide-visible-once-top>
       <div class="about">
         <h1>
           <span>Связаться с нами </span>
@@ -12,7 +12,11 @@
         Теперь вам не нужно встречаться с партнером лично для заключения контракта, вы можете легко
         заключать контракты удаленно.
       </p>
-      <button><i class="fa-solid fa-phone" style="margin-right: 10px"></i>Связаться с нами</button>
+      <router-link to="/contact">
+        <button>
+          <i class="fa-solid fa-phone" style="margin-right: 10px"></i>Связаться с нами
+        </button>
+      </router-link>
       <p>
         Подпишитесь и будьте <br />
         вкурсе о наших новостей
@@ -24,7 +28,7 @@
         <i class="fa-brands fa-twitter"></i>
       </div>
       <div class="mapImg">
-        <div style="position: relative; overflow: hidden; margin-top: 20px;">
+        <div style="position: relative; overflow: hidden; margin-top: 20px">
           <a
             href="https://yandex.com/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
             style="color: #eee; font-size: 12px; position: absolute; top: 0px"
@@ -45,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="right" style="transition: 2s;" v-motion-slide-visible-bottom>
+    <div class="right" style="transition: 0.5s" v-motion-slide-visible-once-bottom>
       <div class="text">
         <h1>Партнерство с нами</h1>
         <p>
