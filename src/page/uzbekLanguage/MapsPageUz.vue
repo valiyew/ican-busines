@@ -1,5 +1,5 @@
 <template>
-  <div class="maps">
+  <div id="contact" class="maps">
     <div class="left" style="transition: 0.5s" v-motion-slide-visible-top>
       <div class="about">
         <h1>
@@ -140,7 +140,7 @@ export default {}
   font-family: 'TT Firs Neue';
   font-size: 16px;
   font-weight: 500;
-  margin: 10px 0px 30px 0px;
+  margin: 30px 0px;
   padding: 15px 20px;
   border-radius: 15px;
   color: #fff;
@@ -190,7 +190,7 @@ export default {}
   font-family: 'TT Firs Neue';
   font-size: 16px;
   font-weight: 500;
-  margin: 10px 0px 30px 0px;
+  margin: 30px 0px;
   padding: 15px 20px;
   border-radius: 15px;
   color: #fff;

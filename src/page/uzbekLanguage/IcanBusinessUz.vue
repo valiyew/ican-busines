@@ -1,7 +1,7 @@
 <template>
   <div class="icanBusines">
     <div class="bg">
-      <div class="title" style="transition: 0.5s" v-motion-slide-visible-top>
+      <div class="title" style="transition: 0.5s" v-motion-slide-visible-once-top>
         <div class="about">
           <h1>
             <span>Ican biznes nima? </span>
@@ -10,17 +10,19 @@
           <div class="absaluteBox">bozorda 10 yildan ortiq</div>
         </div>
         <p class="aboutText">
-          Ushbu sayt yuridik va jismoniy shaxslar bilan tijorat va o'zaro kelishuvga ruxsat beradi
-          imzolash. ⚡ ️Shartnoma yuridik kuchga ega bo'lib, ayni paytda bo'ladi. 🤗 <br />
-          Ilovada mavjud qulay va ishlatish uchun qulay interfeys, shuning uchun sizga imkoniyat
-          berish shart emas qiyinchiliksiz shartnoma tuzing.
+          Bizning veb-saytimiz xavfsiz saqlash va inventarizatsiyani samarali boshqarish imkonini
+          beradi😊.
+          <br />
+          <br />
+          Tovarlaringiz va maʼlumotlaringizni maksimal darajada himoya qilish uchun innovatsion
+          yechimlarimizdan foydalaning ⚡.
         </p>
         <button>
           <i class="fa-solid fa-phone" style="margin-right: 10px"></i>
           <span>Biz bilan bog'laning </span>
         </button>
       </div>
-      <div style="transition: 0.5s" class="img" v-motion-slide-visible-bottom>
+      <div style="transition: 0.5s" class="img" v-motion-slide-visible-once-bottom>
         <img class="imgBg" src="../../assets/images/macBg.png" alt="" />
         <img class="imgMac" src="../../assets/images/macAir.png" alt="" />
       </div>

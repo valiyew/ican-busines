@@ -1,6 +1,6 @@
 <template>
-  <div class="icanShooseBox">
-    <div style="transition: 0.5s" class="about" v-motion-slide-visible-top>
+  <div id="choose" class="icanShooseBox">
+    <div style="transition: 0.5s" class="about" v-motion-slide--once-top>
       <h1 style="display: flex">
         <span>Why choose ican business </span>
         <img class="check" src="../../assets/images/check.svg" alt="" />
@@ -10,7 +10,7 @@
 
     <div class="icanChoose">
       <div class="left">
-        <div style="transition: 0.5s" class="a" v-motion-slide-visible-top>
+        <div style="transition: 0.5s" class="a" v-motion-slide-visible-once-top>
           <div class="title">
             <h2>All management tools online</h2>
             <p style="margin-top: 20px">
@@ -25,7 +25,7 @@
           <img style="border-radius: 15px" src="../../assets/images/imgA.png" alt="" />
         </div>
 
-        <div style="transition: 0.5s" class="AandBSection" v-motion-slide-visible-bottom>
+        <div style="transition: 0.5s" class="AandBSection" v-motion-slide-visible-once-bottom>
           <div class="b" style="position: relative; height: 385px">
             <div style="width: 100%">
               <h2>Stability warehouse management</h2>
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div style="transition: 0.5s" class="right" v-motion-slide-visible-bottom>
+      <div style="transition: 0.5s" class="right" v-motion-slide-visible-once-right>
         <div class="sklad">
           <div>
             <h2>Stability warehouse management</h2>

@@ -8,19 +8,13 @@
         </h1>
         <div class="absaluteBox">Все очень просто</div>
       </div>
-      <p>
-        Теперь вам не нужно встречаться с партнером лично для заключения контракта, вы можете легко
-        заключать контракты удаленно.
-      </p>
+      <p>Зарегистрируйтесь сейчас и обеспечьте надежность своих складских операций!</p>
       <router-link to="/contact">
         <button>
           <i class="fa-solid fa-phone" style="margin-right: 10px"></i>Связаться с нами
         </button>
       </router-link>
-      <p>
-        Подпишитесь и будьте <br />
-        вкурсе о наших новостей
-      </p>
+      <p>Подпишитесь и будьте <br> в курсе наших новостей</p>
       <div class="contacts" style="margin-top: 20px">
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-youtube"></i>
@@ -137,8 +131,7 @@ export default {}
 }
 .left button {
   font-family: 'TT Firs Neue';
-
-  margin: 10px 0px 30px 0px;
+  margin: 30px 0px;
   padding: 15px 20px;
   border-radius: 15px;
   color: #fff;
@@ -187,7 +180,7 @@ export default {}
 .right button {
   font-family: 'TT Firs Neue';
 
-  margin: 10px 0px 30px 0px;
+  margin: 30px 0px;
   padding: 15px 20px;
   border-radius: 15px;
   color: #fff;

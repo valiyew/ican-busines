@@ -1,6 +1,6 @@
 <template>
-  <div class="maps">
-    <div class="left" style="transition: 0.5s" v-motion-slide-visible-top>
+  <div id="connect" class="maps">
+    <div class="left" style="transition: 0.5s" v-motion-slide-once-visible-top>
       <div class="about">
         <h1>
           <span>Connect with us </span>
@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="right" style="transition: 0.5s" v-motion-slide-visible-bottom>
+    <div class="right" style="transition: 0.5s" v-motion-slide-once-visible-bottom>
       <div class="text">
         <h1>Partnership with us</h1>
         <p>
@@ -129,7 +129,7 @@ export default {}
   right: 50%;
 }
 .left button {
-  margin: 10px 0px 30px 0px;
+  margin: 30px 0px;
   padding: 15px 20px;
   border-radius: 15px;
   color: #fff;
@@ -172,7 +172,7 @@ export default {}
   font-weight: 400;
 }
 .right button {
-  margin: 10px 0px 30px 0px;
+  margin: 30px 0px;
   padding: 15px 20px;
   border-radius: 15px;
   color: #fff;

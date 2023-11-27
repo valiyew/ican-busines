@@ -24,21 +24,18 @@
         <p style="display: flex; align-items: center; gap: 10px">
           <img src="../../assets/images/agendaprocust.svg" alt="" /> <span>About the product </span>
         </p>
-        <router-link to="news">
-          <p style="display: flex; align-items: center; gap: 10px">
-            <img src="../../assets/images/note-2news.svg" alt="" /> <span>News</span>
-          </p>
-        </router-link>
-        <router-link to="partner">
-          <p style="display: flex; align-items: center; gap: 10px">
-            <img src="../../assets/images/shield-tickcheck.svg" alt="" /> <span>Advantages</span>
-          </p>
-        </router-link>
-        <router-link to="contact">
-          <p style="display: flex; align-items: center; gap: 10px">
-            <img src="../../assets/images/callMain.svg" alt="" /> <span>Connect with us </span>
-          </p>
-        </router-link>
+        <p style="display: flex; align-items: center; gap: 10px">
+          <img src="../../assets/images/note-2news.svg" alt="" />
+          <span><a href="#news">News</a></span>
+        </p>
+        <p style="display: flex; align-items: center; gap: 10px">
+          <img src="../../assets/images/shield-tickcheck.svg" alt="" />
+          <span><a href="#choose">Advantages</a></span>
+        </p>
+        <p style="display: flex; align-items: center; gap: 10px">
+          <img src="../../assets/images/callMain.svg" alt="" />
+          <span><a href="#connect">Connect with us </a></span>
+        </p>
       </div>
       <div style="display: flex; flex-direction: column; gap: 30px">
         <button class="call"><i class="fa-solid fa-phone"></i> Connect with us</button>
@@ -53,31 +50,25 @@
       <li style="margin-left: 30px">
         <img src="../../assets/images/agenda.svg" alt="" /> <span>About the product </span>
       </li>
-      <router-link to="/news">
-        <li @click="openNews">
-          <img src="../../assets/images/note-2.svg" alt="" /> <span>News</span>
-        </li>
-      </router-link>
+      <li @click="openNews">
+        <img src="../../assets/images/note-2.svg" alt="" /> <span><a href="#news">News</a></span>
+      </li>
 
-      <router-link to="/partner">
-        <li @click="openPart">
-          <img src="../../assets/images/shield-tick.svg" alt="" /> <span>Advantages</span>
-        </li>
-      </router-link>
+      <li @click="openPart">
+        <img src="../../assets/images/shield-tick.svg" alt="" />
+        <span><a href="#choose">Advantages</a></span>
+      </li>
 
-      <router-link to="contact">
-        <li @click="openCall">
-          <img src="../../assets/images/cal.svg" alt="" /> <span>Connect with us </span>
-        </li>
-      </router-link>
+      <li @click="openCall">
+        <img src="../../assets/images/cal.svg" alt="" />
+        <span><a href="#connect">Connect with us</a></span>
+      </li>
     </ul>
 
     <div class="language" :class="{ remove: openMain }">
       <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
 
-      <router-link to="/contact">
-        <span style="cursor: pointer">Connect with us </span>
-      </router-link>
+        <span style="cursor: pointer"><a href="#connect">Connect with us </a></span>
       <div class="mains">
         <button @click="openSidebar" class="main">
           <i class="fa-solid fa-bars"></i>

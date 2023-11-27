@@ -30,7 +30,7 @@
         </p>
         <p style="display: flex; align-items: center; gap: 10px">
           <img src="../assets/images/shield-tickcheck.svg" alt="" />
-          <span><a href="#partner">Преимущества</a></span>
+          <span><a href="#choose">Преимущества</a></span>
         </p>
         <p style="display: flex; align-items: center; gap: 10px">
           <img src="../assets/images/callMain.svg" alt="" />
@@ -56,7 +56,7 @@
 
       <li>
         <img src="../assets/images/shield-tick.svg" alt="" />
-        <span><a href="#partner">Преимущества</a></span>
+        <span><a href="#choose">Преимущества</a></span>
       </li>
 
       <li>
@@ -68,9 +68,8 @@
     <div class="language" :class="{ remove: openMain }">
       <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
 
-      <router-link to="/contact">
-        <span style="cursor: pointer">Связаться с нами</span>
-      </router-link>
+      <span><a href="#contact">Связаться с нами</a></span>
+
       <div class="mains">
         <button @click="openSidebar" class="main">
           <i class="fa-solid fa-bars"></i>

@@ -1,7 +1,7 @@
 <template>
   <div class="icanBusines">
     <div class="bg">
-      <div class="title" style="transition: 0.5s" v-motion-slide-visible-top>
+      <div class="title" style="transition: 0.5s" v-motion-slide-visible-once-top>
         <div class="about">
           <h1>
             <span>What is ican business? </span>
@@ -10,16 +10,17 @@
           <div class="absaluteBox">more than 10 years on the market</div>
         </div>
         <p class="aboutText">
-          This site is a commercial and mutual agreement with legal entities and individuals allows
-          signing. ⚡ ️The contract has legal force at the same time will be. 🤗 <br />
-          The application has a convenient and easy-to-use interface, so you don't have to provides
-          an opportunity to sign a contract without difficulties.
+          Our website provides secure storage and efficient inventory management😊.
+          <br />
+          <br />
+          Take advantage of our innovative solutions for maximum protection of your goods and data
+          ⚡.
         </p>
         <button>
           <i class="fa-solid fa-phone" style="margin-right: 10px"></i> <span>Connect with us </span>
         </button>
       </div>
-      <div class="img" style="transition: 0.5s" v-motion-slide-visible-bottom>
+      <div class="img" style="transition: 0.5s" v-motion-slide-visible-once-bottom>
         <img class="imgBg" src="../../assets/images/macBg.png" alt="" />
         <img class="imgMac" src="../../assets/images/macAir.png" alt="" />
       </div>

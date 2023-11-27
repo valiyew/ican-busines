@@ -7,20 +7,20 @@
         <div>
           <h1>Yuqori darajada xavfsiz va ishonchli ombor tizimi</h1>
           <p>
-            Ushbu maqola sizga eng yaxshi omborlarni boshqarish tizimini (WMS) va boshqa
-            operatsiyalarni boshqarish tizimlarini tezda taqqoslash va baholashga yordam beradi.
+            iCan Business biznes uchun yaratilgan yuqori darajada xavfsiz va ishonchli ombor
+            platformasini taqdim etadi.
           </p>
         </div>
         <div class="buttons">
           <router-link to="/contact">
-            <button class="call">
+            <button class="callBtn">
               <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
               <span>Biz bilan bog'lanish</span>
             </button>
           </router-link>
           <button class="addUser">
             <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
-            <span>Partenaga aylaning </span>
+            <span>Hamkor bo'ling </span>
           </button>
         </div>
         <img
@@ -53,15 +53,17 @@ export default {
   background-image: url(../../assets/images/heroImg.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .about {
-  margin-top: 9%;
-  display: flex;
-  gap: 150px;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 10%;
+  margin-top: 10%;
+  text-align: left;
+  padding: 20px 150px;
+}
+
+.about .title {
+  width: 40%;
 }
 
 .title h1 {
@@ -83,12 +85,13 @@ export default {
 .buttons {
   margin-top: 50px;
   display: flex;
-  align-items: center;
   gap: 30px;
   margin-bottom: 50px;
 }
 
-.call {
+.callBtn {
+  width: 250px;
+  gap: 10px;
   font-family: 'TT Firs Neue';
   font-size: 18px;
   font-weight: 500;
@@ -101,6 +104,7 @@ export default {
 }
 
 .addUser {
+  width: 250px;
   font-family: 'TT Firs Neue';
   font-size: 18px;
   font-weight: 500;
@@ -116,7 +120,7 @@ export default {
   transition: 0.3s;
 }
 
-.call:active {
+.callBtn:active {
   transform: scale(1.1);
 }
 .addUser:active {
@@ -128,169 +132,287 @@ export default {
 }
 
 .about .img {
-  width: 100%;
-  height: 617px;
-  background-image: url(../../assets//images/aboutImg.png);
+  width: 48%;
+  height: 600px;
+  background-image: url(../../assets/images/aboutImg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .sponsors {
   width: 100%;
 }
-@media screen and (max-width: 1200px) {
-  .about .img {
-    height: 500px;
-  }
+@media screen and (max-width: 1900px) {
   .hero {
-    height: 90vh;
+    height: 100vh;
   }
 
   .about {
-    margin-top: 40px;
-    justify-content: center;
-    padding-left: 35px;
+    margin-top: 10%;
+    padding: 20px 150px;
   }
 
   .about .title {
-    width: 100%;
-    padding-right: 30px;
-  }
-
-  .language select {
-    background: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 5px;
-    border-radius: 20px;
-  }
-  .language span {
-    display: none;
-  }
-  .buttons {
-    margin: 0;
-  }
-
-  .buttons button {
-    padding: 10px 20px;
-    font-size: 14px;
+    width: 45%;
   }
 
   .title h1 {
-    font-size: 32px;
-    line-height: 32px;
-    /* width: 100%; */
+    text-align: left;
+    font-size: 48px;
   }
+
   .title p {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 890px) {
-  .about .img {
-    height: 350px;
-  }
-  .hero {
-    height: 128vh;
-  }
-
-  .about {
-    margin-top: 40px;
-    justify-content: center;
-    /* text-align: center; */
-    padding-left: 35px;
-    flex-direction: column;
-  }
-
-  .about .title {
-    width: 100%;
-    padding-right: 30px;
-  }
-
-  .language select {
-    background: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 5px;
-    border-radius: 20px;
-  }
-  .language span {
-    display: none;
+    text-align: left;
+    font-size: 16px;
   }
 
   .buttons {
-    flex-direction: column;
+    margin-top: 30px;
+    flex-direction: row;
+    gap: 30px;
   }
+
   .buttons button {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  .about .img {
+    height: 600px;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .hero {
+    height: 110vh;
+  }
+
+  .about {
+    margin-top: 10%;
+    padding: 20px 100px;
+  }
+
+  .about .title {
+    width: 45%;
+  }
+
+  .title h1 {
+    text-align: left;
+    font-size: 48px;
+  }
+
+  .title p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .buttons {
+    margin-top: 30px;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .buttons button {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  .about .img {
+    height: 600px;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .hero {
+    height: 115vh;
+  }
+
+  .about {
+    margin-top: 7%;
+    padding: 20px 50px;
+  }
+
+  .about .title {
+    width: 40%;
+  }
+
+  .title h1 {
+    text-align: left;
+    font-size: 38px;
+  }
+
+  .title p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .buttons {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons button {
+    padding: 15px 30px;
     width: 100%;
     font-size: 18px;
-    padding: 15px 30px;
   }
 
-  .buttons {
-    margin: 0;
+  .about .img {
+    height: 680px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .hero {
+    height: 220vh;
+  }
+
+  .about {
+    margin-top: 5%;
+    padding: 20px 150px;
+  }
+
+  .about .title {
+    width: 100%;
   }
 
   .title h1 {
-    font-size: 32px;
-    line-height: 32px;
-    /* width: 100%; */
+    text-align: center;
+    font-size: 52px;
   }
+
   .title p {
-    margin-top: 20px;
-    font-size: 14px;
+    text-align: center;
+    font-size: 20px;
   }
-}
 
-@media screen and (min-width: 300px) {
-  .about {
-    gap: 38px;
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
   }
-}
 
-@media screen and (min-width: 576px) {
-  .about {
-    gap: 68px;
+  .buttons button {
+    padding: 20px 30px;
+    width: 100%;
+    font-size: 22px;
   }
-}
 
-@media screen and (min-width: 776px) {
-  .about {
-    gap: 38px;
-  }
-}
-
-@media screen and (min-width: 890px) {
   .about .img {
-    height: 643px;
+    height: 700px;
+    width: 85%;
   }
 }
-
-@media screen and (min-width: 992px) {
-  .about {
-    gap: 58px;
+@media screen and (max-width: 992px) {
+  .hero {
+    height: 200vh;
   }
+
+  .about {
+    margin-top: 5%;
+    padding: 20px 150px;
+  }
+
+  .about .title {
+    width: 100%;
+  }
+
+  .title h1 {
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .title p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
   .about .img {
-    height: 643px;
+    height: 600px;
+    width: 85%;
   }
 }
-
-@media screen and (min-width: 1100px) {
-  .about {
-    gap: 68px;
+@media screen and (max-width: 776px) {
+  .hero {
+    height: 200vh;
   }
+
+  .about {
+    padding: 20px 50px;
+  }
+
+  .about .title {
+    width: 100%;
+  }
+
+  .title h1 {
+    font-size: 38px;
+  }
+
+  .title p {
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
   .about .img {
-    height: 643px;
+    height: 600px;
+    width: 85%;
   }
 }
-
-@media screen and (min-width: 1600px) {
-  .about {
-    gap: 100px;
+@media screen and (max-width: 576px) {
+  .hero {
+    height: 180vh;
   }
+
+  .about {
+    padding: 20px 30px;
+  }
+
+  .about .title {
+    width: 100%;
+  }
+
+  .title h1 {
+    font-size: 34px;
+  }
+
+  .title p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons button {
+    width: 100%;
+    font-size: 20px;
+  }
+
   .about .img {
-    height: 618px;
+    height: 550px;
+    width: 85%;
   }
 }
 </style>

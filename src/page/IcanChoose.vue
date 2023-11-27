@@ -1,5 +1,5 @@
 <template>
-  <div class="icanShooseBox">
+  <div id="choose" class="icanShooseBox">
     <div style="transition: 0.5s" class="about" v-motion-slide-visible-once-top>
       <h1 style="display: flex">
         <span>Почему выбирают ican business</span>
