@@ -9,12 +9,16 @@
         <div class="absaluteBox">Все очень просто</div>
       </div>
       <p>Зарегистрируйтесь сейчас и обеспечьте надежность своих складских операций!</p>
-      <router-link to="/contact">
-        <button>
-          <i class="fa-solid fa-phone" style="margin-right: 10px"></i>Связаться с нами
+      <a href="tel:+998781137400">
+        <button class="callBtn">
+          <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+          <span> Связаться с нами</span>
         </button>
-      </router-link>
-      <p>Подпишитесь и будьте <br> в курсе наших новостей</p>
+      </a>
+      <p>
+        Подпишитесь и будьте <br />
+        в курсе наших новостей
+      </p>
       <div class="contacts" style="margin-top: 20px">
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-youtube"></i>
@@ -50,9 +54,12 @@
           Теперь вам не нужно встречаться с партнером лично для заключения контракта, вы можете
           легко заключать контракты удаленно.
         </p>
-        <button>
-          <i class="fa-solid fa-user-plus" style="margin-right: 10px"></i>Стать партеном
-        </button>
+        <router-link to="/ru/contact">
+          <button class="addUser">
+            <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
+            <span>Стать партеном</span>
+          </button>
+        </router-link>
       </div>
       <div class="img">
         <img src="../assets/images/macBook2.png" alt="" />

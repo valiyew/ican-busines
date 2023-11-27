@@ -1,6 +1,6 @@
 <template>
   <div id="contact" class="maps">
-    <div class="left" style="transition: 0.5s" v-motion-slide-visible-top>
+    <div class="left" style="transition: 0.5s" v-motion-slide-visible-once-top>
       <div class="about">
         <h1>
           <span>Biz bilan bog'laning</span>
@@ -12,9 +12,12 @@
         Endilikda, siz shartnoma tuzish uchun hamkoringiz bilan yuzma-yuz uchrashishingiz shart
         emas, masofadan turib ham bemalol shartnomalar tuzishingiz mumkin
       </p>
-      <button>
-        <i class="fa-solid fa-phone" style="margin-right: 10px"></i> Biz bilan bog'laning
-      </button>
+      <a href="tel:+998781137400">
+        <button class="callBtn">
+          <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+          <span>Biz bilan bog'lanish</span>
+        </button>
+      </a>
       <p>
         Obuna bo'ling va <br />
         yangiliklarimizdan xabardor bo'ling
@@ -47,16 +50,19 @@
         </div>
       </div>
     </div>
-    <div class="right" style="transition: 0.5s" v-motion-slide-visible-bottom>
+    <div class="right" style="transition: 0.5s" v-motion-slide-visible-once-bottom>
       <div class="text">
         <h1>Biz bilan hamkorlik</h1>
         <p>
           Endilikda, siz shartnoma tuzish uchun hamkoringiz bilan yuzma-yuz uchrashishingiz shart
           emas, masofadan turib ham bemalol shartnomalar tuzishingiz mumkin
         </p>
-        <button>
-          <i class="fa-solid fa-user-plus" style="margin-right: 10px"></i> Hamkor bo'ling
-        </button>
+        <router-link to="/uz/contact">
+            <button class="addUser">
+              <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
+              <span>Hamkor bo'ling</span>
+            </button>
+          </router-link>
       </div>
       <div class="img">
         <img src="../../assets/images/macBook2.png" alt="" />

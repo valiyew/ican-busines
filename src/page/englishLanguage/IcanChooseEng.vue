@@ -18,9 +18,12 @@
               difficulties in signing the contract. Now you are dating your partner face to face to
               seal the deal.
             </p>
-            <button>
-              <i class="fa-solid fa-phone" style="margin-right: 10px"></i> Connect with us
-            </button>
+            <a href="tel:+998781137400">
+              <button class="callBtn">
+                <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+                <span> Connect with us</span>
+              </button>
+            </a>
           </div>
           <img style="border-radius: 15px" src="../../assets/images/imgA.png" alt="" />
         </div>

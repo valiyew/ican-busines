@@ -18,9 +18,12 @@
               каких-либо затруднений подписать договор. Теперь вы встречаетесь со своим партнером
               лицом к лицу, чтобы заключить сделку.
             </p>
-            <button>
-              <i class="fa-solid fa-phone" style="margin-right: 10px"></i> Связаться с нами
-            </button>
+            <a href="tel:+998781137400">
+              <button class="callBtn">
+                <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+                <span> Связаться с нами</span>
+              </button>
+            </a>
           </div>
           <img style="border-radius: 15px" src="../assets/images/imgA.png" alt="" />
         </div>

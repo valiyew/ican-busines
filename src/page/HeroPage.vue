@@ -12,16 +12,18 @@
           </p>
         </div>
         <div class="buttons">
-          <router-link to="/contact">
+          <a href="tel:+998781137400">
             <button class="callBtn">
               <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
-              <span>Связаться с нами</span>
+              <span> Связаться с нами</span>
+            </button>
+          </a>
+          <router-link to="/ru/contact">
+            <button class="addUser">
+              <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
+              <span>Стать партеном</span>
             </button>
           </router-link>
-          <button class="addUser">
-            <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
-            <span>Связаться с нами</span>
-          </button>
         </div>
         <img style="margin-top: 30px" class="sponsors" src="../assets/images/sponsors.png" alt="" />
       </div>

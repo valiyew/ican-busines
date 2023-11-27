@@ -1,7 +1,7 @@
 <template>
   <div class="modal" v-if="openModal">
     <div class="modal-content container">
-      <router-link to="/">
+      <router-link to="/uz">
         <button @click="closeModal" class="back"><i class="fa-solid fa-x"></i></button>
       </router-link>
       <div class="about">

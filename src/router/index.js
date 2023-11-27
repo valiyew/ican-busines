@@ -1,49 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { AboutModal, CallModal, PartnerModal } from '../components'
-import { AboutEng, CallEng, PartnerEng } from '../components/ModalEng'
-import { AboutUz, CallUz, PartnerUz } from '../components/ModalUz'
+import { CallModal } from '../components'
+import { CallEng } from '../components/ModalEng'
+import { CallUz } from '../components/ModalUz'
 import { Home } from '../page'
+import { HomeEng } from '../page/englishLanguage/index'
+import { HomeUz } from '../page/uzbekLanguage/index'
 
 const languages = localStorage.getItem('selectedLanguage')
-
-const routeComponent1 = (language) => {
-  switch (language) {
-    case 'Ru':
-      return AboutModal
-    case 'En':
-      return AboutEng
-    case 'Uz':
-      return AboutUz
-    default:
-      return AboutModal
-  }
-}
-
-const routeComponent2 = (language) => {
-  switch (language) {
-    case 'Ru':
-      return PartnerModal
-    case 'En':
-      return PartnerEng
-    case 'Uz':
-      return PartnerUz
-    default:
-      return PartnerModal
-  }
-}
-
-const routeComponent3 = (language) => {
-  switch (language) {
-    case 'Ru':
-      return CallModal
-    case 'En':
-      return CallEng
-    case 'Uz':
-      return CallUz
-    default:
-      return CallModal
-  }
-}
+console.log(languages)
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,20 +17,41 @@ const router = createRouter({
       name: 'home',
       component: Home
     },
+    
     {
-      path: '/news',
-      name: 'news',
-      component: routeComponent1(languages)
+      path: '/ru',
+      name: 'homeRu',
+      component: Home
     },
+    
     {
-      path: '/partner',
-      name: 'partner',
-      component: routeComponent2(languages)
+      path: '/en',
+      name: 'homeEng',
+      component: HomeEng
     },
+
     {
-      path: '/contact',
-      name: 'contact',
-      component: routeComponent3(languages)
+      path: '/uz',
+      name: 'homeUz',
+      component: HomeUz
+    },
+
+    {
+      path: '/ru/contact',
+      name: 'contactRu',
+      component: CallModal
+    },
+
+    {
+      path: '/en/contact',
+      name: 'contactEn',
+      component: CallEng
+    },
+
+    {
+      path: '/uz/contact',
+      name: 'contactUz',
+      component: CallUz
     }
   ]
 })

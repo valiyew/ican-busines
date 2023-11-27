@@ -17,10 +17,12 @@
           Tovarlaringiz va maʼlumotlaringizni maksimal darajada himoya qilish uchun innovatsion
           yechimlarimizdan foydalaning ⚡.
         </p>
-        <button>
-          <i class="fa-solid fa-phone" style="margin-right: 10px"></i>
-          <span>Biz bilan bog'laning </span>
-        </button>
+        <a href="tel:+998781137400">
+          <button class="callBtn">
+            <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+            <span>Biz bilan bog'lanish</span>
+          </button>
+        </a>
       </div>
       <div style="transition: 0.5s" class="img" v-motion-slide-visible-once-bottom>
         <img class="imgBg" src="../../assets/images/macBg.png" alt="" />

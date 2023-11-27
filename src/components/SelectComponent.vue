@@ -9,18 +9,26 @@
     </div>
     <Transition name="fade">
       <ul v-if="showLanguage" class="chooseLanguage">
-        <li @click="selectLanguage('Ru')" value="Ru">
-          <img alt="" src="../assets/images/language1.png" style="width: 20px; height: 20px" />
-          <p>Русский</p>
-        </li>
-        <li @click="selectLanguage('En')"  value="En">
-          <img alt="" src="../assets/images/language2.png" style="width: 20px; height: 20px" />
-          <p>English</p>
-        </li>
-        <li @click="selectLanguage('Uz')" value="Uz">
-          <img alt="" src="../assets/images/language3.png" style="width: 20px; height: 20px" />
-          <p>O’zbek</p>
-        </li>
+        <router-link to="/ru">
+          <li @click="selectLanguage('Ru')" value="Ru">
+            <img alt="" src="../assets/images/language1.png" style="width: 20px; height: 20px" />
+            <p>Русский</p>
+          </li>
+        </router-link>
+
+        <router-link to="/en">
+          <li @click="selectLanguage('En')" value="En">
+            <img alt="" src="../assets/images/language2.png" style="width: 20px; height: 20px" />
+            <p>English</p>
+          </li>
+        </router-link>
+
+        <router-link to="/uz">
+          <li @click="selectLanguage('Uz')" value="Uz">
+            <img alt="" src="../assets/images/language3.png" style="width: 20px; height: 20px" />
+            <p>O’zbek</p>
+          </li>
+        </router-link>
       </ul>
     </Transition>
   </div>
@@ -35,10 +43,6 @@ const defaultLanguage = storedLanguage ? storedLanguage : 'Ru'
 const selectedValue = ref(defaultLanguage)
 
 const handleChange = () => {
-  window.location.reload()
-
-  const selectedLanguageArray = JSON.parse(localStorage.getItem('language')) || []
-  console.log(selectedLanguageArray)
   localStorage.setItem('selectedLanguage', selectedValue.value)
 }
 

@@ -18,9 +18,12 @@
               oshirishga imkon beradi shartnomani imzolashda qiyinchiliklar. Endi siz sherigingiz
               bilan yuzma-yuz uchrashasiz bitimni muhrlash.
             </p>
-            <button>
-              <i class="fa-solid fa-phone" style="margin-right: 10px"></i> Biz bilan bog'laning
-            </button>
+            <a href="tel:+998781137400">
+              <button class="callBtn">
+                <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+                <span>Biz bilan bog'lanish</span>
+              </button>
+            </a>
           </div>
           <img style="border-radius: 15px" src="../../assets/images/imgA.png" alt="" />
         </div>

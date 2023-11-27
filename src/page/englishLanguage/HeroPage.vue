@@ -10,16 +10,18 @@
           </p>
         </div>
         <div class="buttons">
-          <router-link to="/contact">
+          <a href="tel:+998781137400">
             <button class="callBtn">
               <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
-              <span>Connect with us </span>
+              <span> Connect with us</span>
+            </button>
+          </a>
+          <router-link to="/en/contact">
+            <button class="addUser">
+              <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
+              <span>Become a partner</span>
             </button>
           </router-link>
-          <button class="addUser">
-            <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
-            <span>Become a partner </span>
-          </button>
         </div>
         <img
           style="margin-top: 30px"
@@ -97,6 +99,7 @@ import { NavbarEng } from '../../components/NavbarEng/index'
 
 .addUser {
   width: 230px;
+
   font-family: 'TT Firs Neue';
   font-size: 18px;
   font-weight: 500;
@@ -179,7 +182,7 @@ import { NavbarEng } from '../../components/NavbarEng/index'
 }
 @media screen and (max-width: 1400px) {
   .hero {
-    height: 115vh;
+    height: 100vh;
   }
 
   .about {
@@ -219,11 +222,11 @@ import { NavbarEng } from '../../components/NavbarEng/index'
 }
 @media screen and (max-width: 1300px) {
   .hero {
-    height: 125vh;
+    height: 105vh;
   }
 
   .about {
-    margin-top: 7%;
+    margin-top: 10%;
     padding: 20px 50px;
   }
 
@@ -338,7 +341,7 @@ import { NavbarEng } from '../../components/NavbarEng/index'
 }
 @media screen and (max-width: 776px) {
   .hero {
-    height: 200vh;
+    height: 180vh;
   }
 
   .about {

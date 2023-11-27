@@ -12,16 +12,18 @@
           </p>
         </div>
         <div class="buttons">
-          <router-link to="/contact">
+          <a href="tel:+998781137400">
             <button class="callBtn">
               <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
               <span>Biz bilan bog'lanish</span>
             </button>
+          </a>
+          <router-link to="/uz/contact">
+            <button class="addUser">
+              <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
+              <span>Hamkor bo'ling</span>
+            </button>
           </router-link>
-          <button class="addUser">
-            <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
-            <span>Hamkor bo'ling </span>
-          </button>
         </div>
         <img
           style="margin-top: 30px"
@@ -36,14 +38,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { Navbar } from '../../components/NavbarUz/index'
-
-export default {
-  components: {
-    Navbar
-  }
-}
 </script>
 
 <style scoped>
@@ -90,7 +86,7 @@ export default {
 }
 
 .callBtn {
-  width: 250px;
+  width: 230px;
   gap: 10px;
   font-family: 'TT Firs Neue';
   font-size: 18px;
@@ -104,7 +100,8 @@ export default {
 }
 
 .addUser {
-  width: 250px;
+  width: 230px;
+
   font-family: 'TT Firs Neue';
   font-size: 18px;
   font-weight: 500;
@@ -120,7 +117,7 @@ export default {
   transition: 0.3s;
 }
 
-.callBtn:active {
+.call:active {
   transform: scale(1.1);
 }
 .addUser:active {
@@ -187,7 +184,7 @@ export default {
 }
 @media screen and (max-width: 1400px) {
   .hero {
-    height: 110vh;
+    height: 100vh;
   }
 
   .about {
@@ -221,17 +218,17 @@ export default {
   }
 
   .about .img {
-    height: 600px;
+    height: 580px;
     width: 45%;
   }
 }
 @media screen and (max-width: 1300px) {
   .hero {
-    height: 115vh;
+    height: 105vh;
   }
 
   .about {
-    margin-top: 7%;
+    margin-top: 10%;
     padding: 20px 50px;
   }
 
@@ -346,7 +343,7 @@ export default {
 }
 @media screen and (max-width: 776px) {
   .hero {
-    height: 200vh;
+    height: 180vh;
   }
 
   .about {

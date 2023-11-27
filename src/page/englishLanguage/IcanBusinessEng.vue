@@ -16,9 +16,12 @@
           Take advantage of our innovative solutions for maximum protection of your goods and data
           ⚡.
         </p>
-        <button>
-          <i class="fa-solid fa-phone" style="margin-right: 10px"></i> <span>Connect with us </span>
-        </button>
+        <a href="tel:+998781137400">
+          <button class="callBtn">
+            <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+            <span> Connect with us</span>
+          </button>
+        </a>
       </div>
       <div class="img" style="transition: 0.5s" v-motion-slide-visible-once-bottom>
         <img class="imgBg" src="../../assets/images/macBg.png" alt="" />

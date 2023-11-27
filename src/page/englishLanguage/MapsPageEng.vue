@@ -12,7 +12,12 @@
         Now, you must meet your partner face-to-face to conclude the contract no, you can easily
         conclude contracts remotely
       </p>
-      <button><i class="fa-solid fa-phone" style="margin-right: 10px"></i> Connect with us</button>
+      <a href="tel:+998781137400">
+        <button class="callBtn">
+          <i style="margin-right: 10px" class="fa-solid fa-phone"></i>
+          <span> Connect with us</span>
+        </button>
+      </a>
       <p>
         Subscribe and <br />
         stay up to date with our news
@@ -52,9 +57,12 @@
           Now, you must meet your partner face-to-face to conclude the contract no, you can easily
           conclude contracts remotely
         </p>
-        <button>
-          <i class="fa-solid fa-user-plus" style="margin-right: 10px"></i> Become a partner
-        </button>
+        <router-link to="/en/contact">
+          <button class="addUser">
+            <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
+            <span>Become a partner</span>
+          </button>
+        </router-link>
       </div>
       <div class="img">
         <img src="../../assets/images/macBook2.png" alt="" />
