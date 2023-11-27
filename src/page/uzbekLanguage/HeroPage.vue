@@ -86,7 +86,7 @@ import { Navbar } from '../../components/NavbarUz/index'
 }
 
 .callBtn {
-  width: 230px;
+  width: 240px;
   gap: 10px;
   font-family: 'TT Firs Neue';
   font-size: 18px;
@@ -100,7 +100,7 @@ import { Navbar } from '../../components/NavbarUz/index'
 }
 
 .addUser {
-  width: 230px;
+  width: 240px;
 
   font-family: 'TT Firs Neue';
   font-size: 18px;
