@@ -200,8 +200,8 @@ export default {}
   padding: 15px 20px;
   border-radius: 15px;
   color: #fff;
-  border: 1px solid #fff;
-  background: #18b4ca;
+  border: 1px solid rgba(164, 220, 220, 255);
+  background: rgba(114, 201, 216, 255);
   transition: 0.5s;
 }
 .right button:active {

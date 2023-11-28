@@ -59,7 +59,7 @@
         </p>
         <router-link to="/en/contact">
           <button class="addUser">
-            <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
+            <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
             <span>Become a partner</span>
           </button>
         </router-link>
@@ -83,6 +83,7 @@ export default {}
 }
 .maps {
   margin-top: 100px;
+  font-family: 'TT Firs Neue';
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -184,8 +185,8 @@ export default {}
   padding: 15px 20px;
   border-radius: 15px;
   color: #fff;
-  border: 1px solid #fff;
-  background: #18b4ca;
+  border: 1px solid rgba(164, 220, 220, 255);
+  background: rgba(114, 201, 216, 255);
   transition: 0.5s;
 }
 .right button:active {

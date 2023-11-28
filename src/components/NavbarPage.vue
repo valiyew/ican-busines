@@ -38,8 +38,12 @@
         </p>
       </div>
       <div style="display: flex; flex-direction: column; gap: 30px">
-        <button class="call"><i class="fa-solid fa-phone"></i> Связаться с нами</button>
-        <button class="addUser"><i class="fa-solid fa-user-plus"></i> Стать партеном</button>
+        <a href="tel:+998781137400">
+          <button class="call"><i class="fa-solid fa-phone"></i> Связаться с нами</button>
+        </a>
+        <router-link to="/ru/contact">
+          <button class="addUser"><i class="fa-solid fa-user-plus"></i> Стать партеном</button>
+        </router-link>
       </div>
     </div>
   </Transition>
@@ -232,13 +236,14 @@ select option {
 
   .call,
   .addUser {
+    width: 100%;
     padding: 15px 20px;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 500;
   }
   .call {
-    margin-top: 30px;
+    margin-top: 40px;
     background: #18b4ca;
     color: #fff;
     border: none;
