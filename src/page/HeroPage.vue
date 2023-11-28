@@ -265,7 +265,7 @@ export default {
 }
 @media screen and (max-width: 1100px) {
   .hero {
-    height: 208vh;
+    height: 195vh;
   }
 
   .about {
@@ -305,7 +305,7 @@ export default {
 }
 @media screen and (max-width: 992px) {
   .hero {
-    height: 190vh;
+    height: 180vh;
   }
 
   .about {
@@ -343,7 +343,7 @@ export default {
 }
 @media screen and (max-width: 776px) {
   .hero {
-    height: 180vh;
+    height: 175vh;
   }
 
   .about {
@@ -372,13 +372,13 @@ export default {
   }
 
   .about .img {
-    height: 600px;
+    height: 540px;
     width: 85%;
   }
 }
 @media screen and (max-width: 576px) {
   .hero {
-    height: 170vh;
+    height: 160vh;
   }
 
   .about {
@@ -408,7 +408,7 @@ export default {
   }
 
   .about .img {
-    height: 550px;
+    height: 500px;
     width: 85%;
   }
 }

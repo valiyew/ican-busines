@@ -40,11 +40,14 @@ export default {}
   display: grid;
 }
 .footer p {
+  font-family: 'TT Firs Neue';
   font-size: 14px;
   color: #5a6161;
   font-weight: 500;
 }
 .footer li {
+  font-family: 'TT Firs Neue';
+  
   list-style: none;
   font-size: 18px;
   font-weight: 500;
@@ -57,6 +60,8 @@ export default {}
 }
 
 .muallif {
+  font-family: 'TT Firs Neue';
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,14 +73,15 @@ export default {}
   }
   .footer p {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
   }
   .footer li {
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .footer,
   .muallif {
+    flex-direction: column;
     padding: 20px 30px;
   }
   .footer .contacts {
@@ -100,6 +106,10 @@ export default {}
   .footer li {
     margin-bottom: 15px;
     font-size: 16px;
+  }
+  .muallif {
+    flex-direction: row;
+    
   }
 }
 

@@ -175,7 +175,7 @@ export default {}
   background-size: cover;
   border-radius: 30px;
   background-repeat: no-repeat;
-  padding: 40px 30px;
+  padding: 40px 30px 0px 30px;
 }
 .right .text h1 {
   font-family: 'TT Firs Neue';

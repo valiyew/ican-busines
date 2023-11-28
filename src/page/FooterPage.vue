@@ -73,14 +73,15 @@ export default {}
   }
   .footer p {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
   }
   .footer li {
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .footer,
   .muallif {
+    flex-direction: column;
     padding: 20px 30px;
   }
   .footer .contacts {
@@ -105,6 +106,10 @@ export default {}
   .footer li {
     margin-bottom: 15px;
     font-size: 16px;
+  }
+  .muallif {
+    flex-direction: row;
+    
   }
 }
 

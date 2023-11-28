@@ -120,7 +120,7 @@ export default {}
 
 .left p {
   font-family: 'TT Firs Neue';
-
+  height: 100px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -167,19 +167,18 @@ export default {}
   background-size: cover;
   border-radius: 30px;
   background-repeat: no-repeat;
-  padding: 40px 30px;
+  padding: 40px 30px 0px 30px;
 }
 .right .text h1 {
   font-family: 'TT Firs Neue';
-
   padding: 60px 0px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
 }
 .text p {
   font-family: 'TT Firs Neue';
-
+  height: 100px;
   font-size: 18px;
   color: #f0f0f0;
   font-weight: 400;

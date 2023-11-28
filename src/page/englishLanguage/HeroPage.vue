@@ -99,7 +99,6 @@ import { NavbarEng } from '../../components/NavbarEng/index'
 
 .addUser {
   width: 230px;
-
   font-family: 'TT Firs Neue';
   font-size: 18px;
   font-weight: 500;
@@ -263,7 +262,7 @@ import { NavbarEng } from '../../components/NavbarEng/index'
 }
 @media screen and (max-width: 1100px) {
   .hero {
-    height: 208vh;
+    height: 195vh;
   }
 
   .about {
@@ -303,7 +302,7 @@ import { NavbarEng } from '../../components/NavbarEng/index'
 }
 @media screen and (max-width: 992px) {
   .hero {
-    height: 190vh;
+    height: 180vh;
   }
 
   .about {
@@ -341,7 +340,7 @@ import { NavbarEng } from '../../components/NavbarEng/index'
 }
 @media screen and (max-width: 776px) {
   .hero {
-    height: 180vh;
+    height: 175vh;
   }
 
   .about {
@@ -370,13 +369,13 @@ import { NavbarEng } from '../../components/NavbarEng/index'
   }
 
   .about .img {
-    height: 600px;
+    height: 540px;
     width: 85%;
   }
 }
 @media screen and (max-width: 576px) {
   .hero {
-    height: 170vh;
+    height: 160vh;
   }
 
   .about {
@@ -406,7 +405,7 @@ import { NavbarEng } from '../../components/NavbarEng/index'
   }
 
   .about .img {
-    height: 550px;
+    height: 500px;
     width: 85%;
   }
 }
