@@ -151,7 +151,7 @@
 
 @media screen and (min-width: 576px) {
   .modal-content {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     padding: 30px 35px;
   }
   .hero {

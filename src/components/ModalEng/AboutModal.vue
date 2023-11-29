@@ -11,8 +11,8 @@
       <img src="../../assets/images/modalImg.png" alt="" />
       <div class="text">
         <p class="about">
-          This site is a commercial and mutual agreement with legal entities and individuals. to
-          sign allows. 🤗
+          This site is a commercial and mutual agreement with legal entities and individuals. to sign
+          allows. 🤗
         </p>
         <p class="about">
           This app has an easy-to-use interface, which is a deal for you allows you to eliminate any
@@ -151,7 +151,7 @@
 
 @media screen and (min-width: 576px) {
   .modal-content {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     padding: 30px 35px;
   }
   .hero {
