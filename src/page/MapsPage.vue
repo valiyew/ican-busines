@@ -74,7 +74,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { CallModal } from '../components';
+import { CallModal } from '../components'
 
 const isModalOpened = ref(false)
 
@@ -239,6 +239,10 @@ const closeModal = () => {
   .left button {
     width: 100%;
   }
+
+  .text p {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -249,6 +253,9 @@ const closeModal = () => {
   .left h1,
   .right .text h1 {
     font-size: 30px;
+  }
+  .text p {
+    margin-bottom: 0px;
   }
 }
 
