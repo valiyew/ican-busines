@@ -33,14 +33,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { Navbar } from '../components/index'
-
-export default {
-  components: {
-    Navbar
-  }
-}
 </script>
 
 <style scoped>

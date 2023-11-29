@@ -1,5 +1,13 @@
 <template>
   <div id="news" class="containerr">
+    <div>
+      <Transition name="modal" style="position: relative; z-index: 1111;">
+        <div v-if="isModalOpened">
+          <AboutUz @closeModal="closeModal" />
+        </div>
+      </Transition>
+    </div>
+
     <div class="news" style="margin-top: 100px">
       <h1 style="transition: 0.5s" v-motion-slide-visible-once-right>Yangiliklar</h1>
       <div
@@ -48,21 +56,20 @@
                     <h3>Bizning platformamiz bilan uyda ishlash bo'yicha to'liq qo'llanma</h3>
                     <p>Sentabr 17, 2023</p>
                   </div>
-                  <router-link to="/news">
-                    <button
-                      style="
-                        background: #fff;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        font-size: 14px;
-                        font-weight: 500;
-                        margin-top: 80px;
-                      "
-                    >
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                  </router-link>
+                  <button
+                    @click="openModal"
+                    style="
+                      background: #fff;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      font-size: 14px;
+                      font-weight: 500;
+                      margin-top: 80px;
+                    "
+                  >
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
                 </div>
               </div>
               <img src="../../assets/images/girlImg.png" alt="" height="200px" />
@@ -82,21 +89,20 @@
                     <h3>Bizning platformamiz bilan uyda ishlash bo'yicha to'liq qo'llanma</h3>
                     <p>Sentabr 17, 2023</p>
                   </div>
-                  <router-link to="/news">
-                    <button
-                      style="
-                        background: #fff;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        font-size: 14px;
-                        font-weight: 500;
-                        margin-top: 80px;
-                      "
-                    >
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                  </router-link>
+                  <button
+                    @click="openModal"
+                    style="
+                      background: #fff;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      font-size: 14px;
+                      font-weight: 500;
+                      margin-top: 80px;
+                    "
+                  >
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
                 </div>
               </div>
               <img src="../../assets/images/newPageImg.png" alt="" height="200px" />
@@ -116,21 +122,20 @@
                     <h3>Bizning platformamiz bilan uyda ishlash bo'yicha to'liq qo'llanma</h3>
                     <p>Sentabr 17, 2023</p>
                   </div>
-                  <router-link to="/news">
-                    <button
-                      style="
-                        background: #fff;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        font-size: 14px;
-                        font-weight: 500;
-                        margin-top: 80px;
-                      "
-                    >
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                  </router-link>
+                  <button
+                    @click="openModal"
+                    style="
+                      background: #fff;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      font-size: 14px;
+                      font-weight: 500;
+                      margin-top: 80px;
+                    "
+                  >
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
                 </div>
               </div>
               <img src="../../assets/images/girlImg.png" alt="" height="200px" />
@@ -147,11 +152,26 @@
 </template>
 <script>
 import { ref, onMounted } from 'vue'
+import { AboutUz } from '../../components/ModalUz'
 
 export default {
+  data() {
+    return {
+      isModalOpened: false
+    }
+  },
+  methods: {
+    openModal() {
+      this.isModalOpened = true
+      document.body.style.overflow = 'hidden'
+    },
+    closeModal() {
+      this.isModalOpened = false
+      document.body.style.overflow = 'auto'
+    }
+  },
   setup() {
     const owlCarousel = ref(null)
-
     onMounted(() => {
       // eslint-disable-next-line no-undef
       owlCarousel.value = $('.owl-carousel').owlCarousel({
@@ -192,23 +212,22 @@ export default {
         }
       })
     })
-
     const nextSlide = () => {
       owlCarousel.value.trigger('next.owl.carousel')
     }
-
     const prevSlide = () => {
       owlCarousel.value.trigger('prev.owl.carousel')
     }
-
     return {
       nextSlide,
       prevSlide
     }
-  }
+  },
+  components: { AboutUz }
 }
 </script>
 <style scoped>
+
 .news {
   display: flex;
   align-items: center;

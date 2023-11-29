@@ -1,14 +1,12 @@
 <template>
-  <div class="modal" v-if="openModal">
+  <div class="modal">
     <div class="modal-content">
       <div class="hero">
         <div>
           <p>Sentabr 17, 2023</p>
           <h1>Bizning platformamiz bilan uyda ishlash bo'yicha to'liq qo'llanma</h1>
         </div>
-        <router-link to="/">
-          <button @click="closeModal"><i class="fa-solid fa-x"></i></button>
-        </router-link>
+        <button @click="$emit('closeModal')"><i class="fa-solid fa-x"></i></button>
       </div>
       <img src="../../assets/images/modalImg.png" alt="" />
       <div class="text">
@@ -35,15 +33,7 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-const openModal = ref(true)
-
-const closeModal = () => {
-  openModal.value = false
-}
-</script>
+<script setup></script>
 
 <style scoped>
 .modal {

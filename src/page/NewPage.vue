@@ -1,5 +1,11 @@
 <template>
   <div id="news" class="containerr">
+    <Transition name="modal">
+      <div v-if="isModalOpened">
+        <AboutModal @closeModalEn="closeModal" />
+      </div>
+    </Transition>
+
     <div class="news" style="margin-top: 100px">
       <h1 style="transition: 0.5s" v-motion-slide-visible-once-right>Новости</h1>
       <div
@@ -48,7 +54,7 @@
                     <p>September 17, 2023</p>
                   </div>
                   <button
-                    @click="toggleModal"
+                    @click="openModal"
                     style="
                       background: #fff;
                       width: 50px;
@@ -81,7 +87,7 @@
                     <p>September 17, 2023</p>
                   </div>
                   <button
-                    @click="toggleModal"
+                    @click="openModal"
                     style="
                       background: #fff;
                       width: 50px;
@@ -114,7 +120,7 @@
                     <p>September 17, 2023</p>
                   </div>
                   <button
-                    @click="toggleModal"
+                    @click="openModal"
                     style="
                       background: #fff;
                       width: 50px;
@@ -132,7 +138,7 @@
               <img src="../assets/images/newPageImg.png" alt="" height="200px" />
               <div class="mobileText">
                 <h3>Полное руководство по работе из дома с нашей платформой</h3>
-                <p>September 17, 2023</p>
+                <p>September 17, 2023 {{ a }}</p>
               </div>
             </div>
           </div>
@@ -144,12 +150,27 @@
 
 <script>
 import { ref, onMounted } from 'vue'
+import { AboutModal } from '../components'
 
 export default {
+  data() {
+    return {
+      isModalOpened: false
+    }
+  },
+  methods: {
+    openModal() {
+      this.isModalOpened = true
+      document.body.style.overflow = 'hidden'
+    },
+    closeModal() {
+      this.isModalOpened = false
+      document.body.style.overflow = 'auto'
+    }
+  },
+
   setup() {
     const owlCarousel = ref(null)
-    const openModal = ref(false)
-
     onMounted(() => {
       // eslint-disable-next-line no-undef
       owlCarousel.value = $('.owl-carousel').owlCarousel({
@@ -190,29 +211,24 @@ export default {
         }
       })
     })
-
     const nextSlide = () => {
       owlCarousel.value.trigger('next.owl.carousel')
     }
-
     const prevSlide = () => {
       owlCarousel.value.trigger('prev.owl.carousel')
     }
-
-    const toggleModal = () => {
-      openModal.value = !openModal.value
-    }
-
     return {
       nextSlide,
-      prevSlide,
-      toggleModal
+      prevSlide
     }
-  }
+  },
+  components: { AboutModal }
 }
 </script>
 
 <style scoped>
+
+
 .news {
   display: flex;
   align-items: center;

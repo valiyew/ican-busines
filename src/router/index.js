@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { CallModal } from '../components'
-import { CallEng } from '../components/ModalEng'
-import { CallUz } from '../components/ModalUz'
+import { AboutModal, CallModal } from '../components'
+import { AboutEng, CallEng } from '../components/ModalEng'
+import { AboutUz, CallUz } from '../components/ModalUz'
 import { Home } from '../page'
 import { HomeEng } from '../page/englishLanguage/index'
 import { HomeUz } from '../page/uzbekLanguage/index'
@@ -17,13 +17,13 @@ const router = createRouter({
       name: 'home',
       component: Home
     },
-    
+
     {
       path: '/ru',
       name: 'homeRu',
       component: Home
     },
-    
+
     {
       path: '/en',
       name: 'homeEng',
@@ -52,6 +52,24 @@ const router = createRouter({
       path: '/uz/contact',
       name: 'contactUz',
       component: CallUz
+    },
+    
+    {
+      path: '/news/ru',
+      name: 'aboutRu',
+      component: AboutModal
+    },
+
+    {
+      path: '/news/en',
+      name: 'aboutEn',
+      component: AboutEng
+    },
+
+    {
+      path: '/news/uz',
+      name: 'aboutUz',
+      component: AboutUz
     }
   ]
 })

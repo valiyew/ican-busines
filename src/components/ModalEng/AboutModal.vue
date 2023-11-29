@@ -1,48 +1,37 @@
 <template>
-    <div class="modal" v-if="openModal">
-      <div class="modal-content">
-        <div class="hero">
-          <div>
-            <p>September 17, 2023</p>
-            <h1>A complete guide to working from home with our platform</h1>
-          </div>
-          <router-link to="/">
-            <button @click="closeModal"><i class="fa-solid fa-x"></i></button>
-          </router-link>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="hero">
+        <div>
+          <p>September 17, 2023</p>
+          <h1>A complete guide to working from home with our platform</h1>
         </div>
-        <img src="../../assets/images/modalImg.png" alt="" />
-        <div class="text">
-          <p class="about">
-            This site offers you commercial and mutual Sharia contracts with legal entities and
-            individuals allows signing. ⚡ ️The contract has legal force at the same time will be.
-            🤗
-          </p>
-          <p class="about">
-            The application has a convenient and easy-to-use interface, so you don't have to
-            provides an opportunity to sign a contract without difficulties. 🥇 Now, you contract
-            You don't need to meet your partner face-to-face, even remotely you can freely enter
-            into contracts
-          </p>
-          <p class="about">Share on social networks</p>
-          <div class="contacts">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-twitter"></i>
-          </div>
+        <button @click="$emit('closeModal')"><i class="fa-solid fa-x"></i></button>
+      </div>
+      <img src="../../assets/images/modalImg.png" alt="" />
+      <div class="text">
+        <p class="about">
+          This site offers you commercial and mutual Sharia contracts with legal entities and
+          individuals allows signing. ⚡ ️The contract has legal force at the same time will be. 🤗
+        </p>
+        <p class="about">
+          The application has a convenient and easy-to-use interface, so you don't have to provides
+          an opportunity to sign a contract without difficulties. 🥇 Now, you contract You don't
+          need to meet your partner face-to-face, even remotely you can freely enter into contracts
+        </p>
+        <p class="about">Share on social networks</p>
+        <div class="contacts">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-
-const openModal = ref(true)
-
-const closeModal = () => {
-  openModal.value = false
-}
 </script>
 
 <style scoped>
