@@ -313,9 +313,9 @@ const closeModal = () => {
   }
 
   .buttons button {
-    padding: 20px 30px;
+    padding: 18px 20px;
     width: 100%;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .about .img {
@@ -363,7 +363,7 @@ const closeModal = () => {
 }
 @media screen and (max-width: 776px) {
   .hero {
-    height: 175vh;
+    height: 165vh;
   }
 
   .about {
@@ -389,10 +389,12 @@ const closeModal = () => {
 
   .buttons button {
     width: 100%;
+    font-size: 18px;
+    padding: 18px 20px;
   }
 
   .about .img {
-    height: 540px;
+    height: 500px;
     width: 85%;
   }
 }
@@ -423,8 +425,9 @@ const closeModal = () => {
   }
 
   .buttons button {
+    padding: 15px 20px;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .about .img {
