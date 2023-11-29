@@ -11,15 +11,12 @@
       <img src="../../assets/images/modalImg.png" alt="" />
       <div class="text">
         <p class="about">
-          Bu sayt sizga yuridik va jismoniy shaxslar bilan nasiya savdo va o’zaro shar’iy shartnoma
-          imzolash imkonini beradi. ⚡ ️Shartnoma bir vaqtning o’zida yuridik kuchga ham ega
-          bo’ladi. 🤗
+          Ushbu sayt yuridik va jismoniy shaxslar bilan tijorat va o'zaro kelishuvdir. imzolashga
+          ruxsat beradi. 🤗
         </p>
         <p class="about">
-          Ilova qulay va foydalanishga oson interfeysga ega bo’lib, sizga hech qanday
-          qiyinchiliklarsiz shartnoma imzolash imkoniyatini beradi. 🥇 Endilikda, siz shartnoma
-          tuzish uchun hamkoringiz bilan yuzma-yuz uchrashishingiz shart emas, masofadan turib ham
-          bemalol shartnomalar tuzishingiz mumkin
+          Ushbu ilova ishlatish uchun qulay interfeysga ega, bu sizga shartnoma
+          imzolashda har qanday qiyinchiliklarni bartaraf etishga imkon beradi.🥇
         </p>
         <p class="about">Ijtimoiy tarmoqlarda baham ko'ring</p>
         <div class="contacts">
@@ -36,7 +33,19 @@
 <script setup></script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.5s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  transform: translateY(-5%);
+  opacity: 0;
+}
+
 .modal {
+  overflow-y: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -51,6 +60,7 @@
 
 .modal-content {
   width: 45%;
+  height: 90vh;
   padding: 20px 30px;
   position: relative;
   border-radius: 25px;
@@ -58,7 +68,7 @@
 
 .modal-content img {
   width: 100%;
-  /* height: 410px; */
+  height: 410px;
 }
 
 .modal-content .contacts {
@@ -68,7 +78,7 @@
   cursor: pointer;
 }
 .modal-content .about {
-  margin-top: 10px;
+  /* margin-top: 5px; */
   font-family: 'TT Firs Neue';
   font-weight: 400;
   font-size: 14px;
@@ -95,9 +105,9 @@
   color: #5a6161;
 }
 .hero h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'TT Firs Neue';
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 .hero button {

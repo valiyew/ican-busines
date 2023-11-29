@@ -47,7 +47,7 @@
         style="margin-top: 50px; transition: 0.5s"
         v-motion-slide-visible-once-bottom
       >
-        <div class="item">
+        <div class="item" @click="openModal">
           <div class="card">
             <div class="card-body">
               <div class="desktopText">
@@ -80,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item" @click="openModal">
           <div class="card">
             <div class="card-body">
               <div class="desktopText">
@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item" @click="openModal">
           <div class="card">
             <div class="card-body">
               <div class="desktopText">

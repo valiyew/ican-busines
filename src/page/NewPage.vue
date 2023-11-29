@@ -2,7 +2,7 @@
   <div id="news" class="containerr">
     <Transition name="modal">
       <div v-if="isModalOpened">
-        <AboutModal @closeModalEn="closeModal" />
+        <AboutModal @closeModal="closeModal" />
       </div>
     </Transition>
 
@@ -45,7 +45,7 @@
         v-motion-slide-visible-once-bottom
       >
         <div class="item">
-          <div class="card">
+          <div class="card" @click="openModal">
             <div class="card-body">
               <div class="desktopText">
                 <div>
@@ -77,7 +77,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item" @click="openModal">
           <div class="card">
             <div class="card-body">
               <div class="desktopText">
@@ -110,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item" @click="openModal">
           <div class="card">
             <div class="card-body">
               <div class="desktopText">
@@ -155,7 +155,8 @@ import { AboutModal } from '../components'
 export default {
   data() {
     return {
-      isModalOpened: false
+      isModalOpened: false,
+      isModalAbout: false
     }
   },
   methods: {
@@ -227,8 +228,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 .news {
   display: flex;
   align-items: center;

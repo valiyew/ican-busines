@@ -11,13 +11,12 @@
       <img src="../../assets/images/modalImg.png" alt="" />
       <div class="text">
         <p class="about">
-          This site offers you commercial and mutual Sharia contracts with legal entities and
-          individuals allows signing. ⚡ ️The contract has legal force at the same time will be. 🤗
+          This site is a commercial and mutual agreement with legal entities and individuals. to
+          sign allows. 🤗
         </p>
         <p class="about">
-          The application has a convenient and easy-to-use interface, so you don't have to provides
-          an opportunity to sign a contract without difficulties. 🥇 Now, you contract You don't
-          need to meet your partner face-to-face, even remotely you can freely enter into contracts
+          This app has an easy-to-use interface, which is a deal for you allows you to eliminate any
+          difficulties in signing. 🥇
         </p>
         <p class="about">Share on social networks</p>
         <div class="contacts">
@@ -31,11 +30,22 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.5s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  transform: translateY(-5%);
+  opacity: 0;
+}
+
 .modal {
+  overflow-y: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,6 +60,7 @@
 
 .modal-content {
   width: 45%;
+  height: 90vh;
   padding: 20px 30px;
   position: relative;
   border-radius: 25px;
@@ -57,7 +68,7 @@
 
 .modal-content img {
   width: 100%;
-  /* height: 410px; */
+  height: 410px;
 }
 
 .modal-content .contacts {
@@ -67,7 +78,7 @@
   cursor: pointer;
 }
 .modal-content .about {
-  margin-top: 10px;
+  /* margin-top: 5px; */
   font-family: 'TT Firs Neue';
   font-weight: 400;
   font-size: 14px;
@@ -94,9 +105,9 @@
   color: #5a6161;
 }
 .hero h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'TT Firs Neue';
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 .hero button {
