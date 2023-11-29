@@ -1,5 +1,11 @@
 <template>
   <div id="connect" class="maps">
+    <div v-if="isModalOpened">
+      <Transition name="fade">
+        <CallEng @closeModal="closeModal" />
+      </Transition>
+    </div>
+
     <div class="left" style="transition: 0.5s" v-motion-slide-once-visible-top>
       <div class="about">
         <h1>
@@ -57,12 +63,10 @@
           Now, you must meet your partner face-to-face to conclude the contract no, you can easily
           conclude contracts remotely
         </p>
-        <router-link to="/en/contact">
-          <button class="addUser">
-            <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
-            <span>Become a partner</span>
-          </button>
-        </router-link>
+        <button class="addUser" @click="openModal">
+          <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
+          <span>Become a partner</span>
+        </button>
       </div>
       <div class="img">
         <img src="../../assets/images/macBook2.png" alt="" />
@@ -71,8 +75,22 @@
   </div>
 </template>
 
-<script>
-export default {}
+<script setup>
+import { CallEng } from '../../components/ModalEng'
+import { ref } from 'vue'
+
+const isModalOpened = ref(false)
+
+const openModal = () => {
+  document.body.style.overflow = 'hidden'
+  isModalOpened.value = true
+}
+
+const closeModal = () => {
+  document.body.style.overflow = 'auto'
+  isModalOpened.value = false
+}
+
 </script>
 
 <style scoped>

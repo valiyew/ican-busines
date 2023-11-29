@@ -2,6 +2,12 @@
   <div class="hero">
     <Navbar />
 
+    <div v-if="isModalOpened">
+      <Transition name="fade">
+        <CallUz @closeModal="closeModal" />
+      </Transition>
+    </div>
+
     <div class="about">
       <div class="title">
         <div>
@@ -18,12 +24,10 @@
               <span>Biz bilan bog'lanish</span>
             </button>
           </a>
-          <router-link to="/uz/contact">
-            <button class="addUser">
-              <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
-              <span>Hamkor bo'ling</span>
-            </button>
-          </router-link>
+          <button @click="openModal" class="addUser">
+            <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
+            <span>Hamkor bo'ling</span>
+          </button>
         </div>
         <img
           style="margin-top: 30px"
@@ -39,10 +43,34 @@
 </template>
 
 <script setup>
+import { CallUz } from '../../components/ModalUz'
 import { Navbar } from '../../components/NavbarUz/index'
+
+import { ref } from 'vue'
+const isModalOpened = ref(false)
+
+const openModal = () => {
+  document.body.style.overflow = 'hidden'
+  isModalOpened.value = true
+}
+
+const closeModal = () => {
+  document.body.style.overflow = 'auto'
+  isModalOpened.value = false
+}
 </script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .hero {
   height: 100vh;
   width: 100%;

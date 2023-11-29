@@ -1,5 +1,11 @@
 <template>
   <div class="hero">
+    <div v-if="isModalOpened">
+      <Transition name="fade">
+        <CallModal @closeModal="closeModal" />
+      </Transition>
+    </div>
+
     <Navbar />
 
     <div class="about">
@@ -18,12 +24,10 @@
               <span> Связаться с нами</span>
             </button>
           </a>
-          <router-link to="/ru/contact">
-            <button class="addUser">
-              <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
-              <span>Стать партеном</span>
-            </button>
-          </router-link>
+          <button @click="openModal" class="addUser">
+            <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
+            <span>Стать партеном</span>
+          </button>
         </div>
         <img style="margin-top: 30px" class="sponsors" src="../assets/images/sponsors.png" alt="" />
       </div>
@@ -34,10 +38,32 @@
 </template>
 
 <script setup>
-import { Navbar } from '../components/index'
+import { ref } from 'vue'
+import { CallModal, Navbar } from '../components/index'
+const isModalOpened = ref(false)
+
+const openModal = () => {
+  document.body.style.overflow = 'hidden'
+  isModalOpened.value = true
+}
+
+const closeModal = () => {
+  document.body.style.overflow = 'auto'
+  isModalOpened.value = false
+}
 </script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .hero {
   height: 100vh;
   width: 100%;

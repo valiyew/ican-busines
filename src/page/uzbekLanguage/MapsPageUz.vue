@@ -1,5 +1,11 @@
 <template>
   <div id="contact" class="maps">
+    <div v-if="isModalOpened">
+      <Transition name="fade">
+        <CallUz @closeModal="closeModal" />
+      </Transition>
+    </div>
+
     <div class="left" style="transition: 0.5s" v-motion-slide-visible-once-top>
       <div class="about">
         <h1>
@@ -57,12 +63,10 @@
           Endilikda, siz shartnoma tuzish uchun hamkoringiz bilan yuzma-yuz uchrashishingiz shart
           emas, masofadan turib ham bemalol shartnomalar tuzishingiz mumkin
         </p>
-        <router-link to="/uz/contact">
-            <button class="addUser">
-              <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
-              <span>Hamkor bo'ling</span>
-            </button>
-          </router-link>
+        <button class="addUser" @click="openModal">
+          <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
+          <span>Hamkor bo'ling</span>
+        </button>
       </div>
       <div class="img">
         <img src="../../assets/images/macBook2.png" alt="" />
@@ -71,8 +75,21 @@
   </div>
 </template>
 
-<script>
-export default {}
+<script setup>
+import { ref } from 'vue'
+import { CallUz } from '../../components/ModalUz'
+
+const isModalOpened = ref(false)
+
+const openModal = () => {
+  document.body.style.overflow = 'hidden'
+  isModalOpened.value = true
+}
+
+const closeModal = () => {
+  document.body.style.overflow = 'auto'
+  isModalOpened.value = false
+}
 </script>
 
 <style scoped>

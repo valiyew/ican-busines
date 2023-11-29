@@ -1,6 +1,13 @@
 <template>
   <div class="hero">
     <NavbarEng />
+
+    <div v-if="isModalOpened">
+      <Transition name="fade">
+        <CallEng @closeModal="closeModal" />
+      </Transition>
+    </div>
+
     <div class="about">
       <div class="title">
         <div>
@@ -16,12 +23,10 @@
               <span> Connect with us</span>
             </button>
           </a>
-          <router-link to="/en/contact">
-            <button class="addUser">
-              <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
-              <span>Become a partner</span>
-            </button>
-          </router-link>
+          <button @click="openModal" class="addUser">
+            <i style="margin-right: 0px" class="fa-solid fa-user-plus"></i>
+            <span>Become a partner</span>
+          </button>
         </div>
         <img
           style="margin-top: 30px"
@@ -37,7 +42,20 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import { CallEng } from '../../components/ModalEng';
 import { NavbarEng } from '../../components/NavbarEng/index'
+const isModalOpened = ref(false)
+
+const openModal = () => {
+  document.body.style.overflow = 'hidden'
+  isModalOpened.value = true
+}
+
+const closeModal = () => {
+  document.body.style.overflow = 'auto'
+  isModalOpened.value = false
+}
 </script>
 
 <style scoped>

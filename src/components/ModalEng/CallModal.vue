@@ -1,9 +1,7 @@
 <template>
-  <div class="modal" v-if="openModal">
+  <div class="modal">
     <div class="modal-content container">
-      <router-link to="/en">
-        <button @click="closeModal" class="back"><i class="fa-solid fa-x"></i></button>
-      </router-link>
+      <button @click="$emit('closeModal')" class="back"><i class="fa-solid fa-x"></i></button>
       <div class="about">
         <h1>
           <span>Leave your contact and we will contact you:</span>
@@ -44,14 +42,7 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-const openModal = ref(true)
-const closeModal = () => {
-  openModal.value = false
-}
-</script>
+<script setup></script>
 
 <style scoped>
 .modal {
@@ -80,16 +71,21 @@ const closeModal = () => {
 }
 .about h1 {
   font-family: 'TT Firs Neue';
-
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 30px;
   font-weight: 500;
 }
+
+.about h1 .check {
+  z-index: 1;
+  position: absolute;
+  right: 8%;
+  top: 35%;
+}
 .modal-content .absaluteBox {
   font-family: 'TT Firs Neue';
-
   position: absolute;
   top: 0;
   right: 0;
@@ -97,7 +93,7 @@ const closeModal = () => {
   background: #fff;
   border-radius: 15px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   box-shadow: 4px 8px 10px 0px #606060;
 }
@@ -122,7 +118,6 @@ const closeModal = () => {
 }
 .call button {
   font-family: 'TT Firs Neue';
-
   margin-top: 25px;
   padding: 15px 20px;
   color: #fff;
@@ -152,6 +147,17 @@ const closeModal = () => {
     font-size: 25px;
     border: none;
   }
+
+  .modal-content .about {
+    padding-right: 70px;
+  }
+  .about h1 {
+    font-size: 20px;
+  }
+
+  .about h1 .check {
+    top: 40%;
+  }
 }
 @media screen and (min-width: 576px) {
   .modal-content {
@@ -160,6 +166,12 @@ const closeModal = () => {
   .modal-content .about {
     margin-top: 20px;
     width: 500px;
+  }
+  .about h1 {
+    font-size: 35px;
+  }
+  .about h1 .check {
+    top: 35%;
   }
 }
 @media screen and (min-width: 776px) {

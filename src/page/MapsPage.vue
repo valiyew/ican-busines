@@ -1,5 +1,11 @@
 <template>
   <div class="maps" id="contact">
+    <div v-if="isModalOpened">
+      <Transition name="fade">
+        <CallModal @closeModal="closeModal" />
+      </Transition>
+    </div>
+
     <div class="left" style="transition: 0.5s" v-motion-slide-visible-once-top>
       <div class="about">
         <h1>
@@ -54,12 +60,10 @@
           Теперь вам не нужно встречаться с партнером лично для заключения контракта, вы можете
           легко заключать контракты удаленно.
         </p>
-        <router-link to="/ru/contact">
-          <button class="addUser">
-            <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
-            <span>Стать партеном</span>
-          </button>
-        </router-link>
+        <button class="addUser" @click="openModal">
+          <i style="margin-right: 10px" class="fa-solid fa-user-plus"></i>
+          <span>Стать партеном</span>
+        </button>
       </div>
       <div class="img">
         <img src="../assets/images/macBook2.png" alt="" />
@@ -68,8 +72,21 @@
   </div>
 </template>
 
-<script>
-export default {}
+<script setup>
+import { ref } from 'vue'
+import { CallModal } from '../components';
+
+const isModalOpened = ref(false)
+
+const openModal = () => {
+  document.body.style.overflow = 'hidden'
+  isModalOpened.value = true
+}
+
+const closeModal = () => {
+  document.body.style.overflow = 'auto'
+  isModalOpened.value = false
+}
 </script>
 
 <style scoped>
