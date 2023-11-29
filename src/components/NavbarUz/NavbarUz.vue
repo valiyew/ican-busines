@@ -21,18 +21,18 @@
         </button>
       </div>
       <div>
-        <p style="display: flex; align-items: center; gap: 10px">
+        <p @click="closeSidebar" style="display: flex; align-items: center; gap: 10px">
           <img src="../../assets/images/agendaprocust.svg" alt="" /> <span>Mahsulot haqida </span>
         </p>
-        <p style="display: flex; align-items: center; gap: 10px">
+        <p @click="closeSidebar" style="display: flex; align-items: center; gap: 10px">
           <img src="../../assets/images/note-2news.svg" alt="" />
           <span><a href="#news">Yangiliklar</a></span>
         </p>
-        <p style="display: flex; align-items: center; gap: 10px">
+        <p @click="closeSidebar" style="display: flex; align-items: center; gap: 10px">
           <img src="../../assets/images/shield-tickcheck.svg" alt="" />
           <span><a href="#choose">Afzalliklar</a></span>
         </p>
-        <p style="display: flex; align-items: center; gap: 10px">
+        <p @click="closeSidebar" style="display: flex; align-items: center; gap: 10px">
           <img src="../../assets/images/callMain.svg" alt="" />
           <span><a href="#contact">Biz bilan bog'lanish </a></span>
         </p>

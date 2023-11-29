@@ -21,18 +21,18 @@
         </button>
       </div>
       <div>
-        <p style="display: flex; align-items: center; gap: 10px">
+        <p @click="closeSidebar" style="display: flex; align-items: center; gap: 10px">
           <img src="../assets/images/agendaprocust.svg" alt="" /> <span>О продукте</span>
         </p>
-        <p style="display: flex; align-items: center; gap: 10px">
+        <p @click="closeSidebar" style="display: flex; align-items: center; gap: 10px">
           <img src="../assets/images/note-2news.svg" alt="" />
           <span><a href="#news">Новости</a></span>
         </p>
-        <p style="display: flex; align-items: center; gap: 10px">
+        <p @click="closeSidebar" style="display: flex; align-items: center; gap: 10px">
           <img src="../assets/images/shield-tickcheck.svg" alt="" />
           <span><a href="#choose">Преимущества</a></span>
         </p>
-        <p style="display: flex; align-items: center; gap: 10px">
+        <p @click="closeSidebar" style="display: flex; align-items: center; gap: 10px">
           <img src="../assets/images/callMain.svg" alt="" />
           <span><a href="#contact">Связаться с нами</a></span>
         </p>
