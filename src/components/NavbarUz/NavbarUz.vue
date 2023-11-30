@@ -102,9 +102,12 @@ const openCall = () => {
 
 const openMain = ref(false)
 const openSidebar = () => {
+  document.body.style.overflow = 'hidden'
   openMain.value = true
 }
 const closeSidebar = () => {
+  document.body.style.overflow = 'auto'
+  
   openMain.value = false
 }
 </script>

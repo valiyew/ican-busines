@@ -68,7 +68,7 @@
     <div class="language" :class="{ remove: openMain }">
       <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
 
-        <span style="cursor: pointer"><a href="#connect">Connect with us </a></span>
+      <span style="cursor: pointer"><a href="#connect">Connect with us </a></span>
       <div class="mains">
         <button @click="openSidebar" class="main">
           <i class="fa-solid fa-bars"></i>
@@ -100,9 +100,13 @@ const openCall = () => {
 
 const openMain = ref(false)
 const openSidebar = () => {
+  document.body.style.overflow = 'hidden'
+
   openMain.value = true
 }
 const closeSidebar = () => {
+  document.body.style.overflow = 'auto'
+
   openMain.value = false
 }
 </script>
