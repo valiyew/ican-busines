@@ -24,8 +24,7 @@
         </a>
       </div>
       <div style="transition: 0.5s" class="img" v-motion-slide-visible-once-bottom>
-        <img class="imgBg" src="../assets/images/macBg.png" alt="" />
-        <img class="imgMac" src="../assets/images/macAir.png" alt="" />
+        <img src="../assets/images/businesImg.png" alt="" />
       </div>
     </div>
   </div>
@@ -45,17 +44,18 @@
   justify-content: space-between;
   background: #f7f7f7;
   border-radius: 20px;
-  padding: 20px 40px;
+  padding: 0px 40px;
 }
+
 .img {
-  position: relative;
-  /* width: 0%; */
+  width: 90%;
+  height: 100%;
 }
 .bg .title {
   width: 50%;
 }
 .title .about {
-  padding: 60px 0;
+  padding: 55px 0;
   width: 500px;
   position: relative;
 }
@@ -64,7 +64,6 @@
   align-items: center;
   gap: 10px;
   font-family: 'TT Firs Neue';
-
   font-size: 30px;
   font-weight: 600;
 }
@@ -112,6 +111,20 @@
   position: absolute;
   bottom: 0;
   top: 20px;
+}
+
+@media screen and (max-width: 1900px) {
+  .img {
+    width: 100%;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 1200px) {

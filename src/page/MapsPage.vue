@@ -124,7 +124,7 @@ const closeModal = () => {
   display: flex;
   align-items: center;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   gap: 10px;
 }
 .left {
@@ -137,8 +137,8 @@ const closeModal = () => {
 
 .left p {
   font-family: 'TT Firs Neue';
-  height: 100px;
-  font-size: 18px;
+  height: 80px;
+  font-size: 16px;
   font-weight: 400;
 }
 .left .map {
@@ -190,13 +190,13 @@ const closeModal = () => {
   font-family: 'TT Firs Neue';
   padding: 60px 0px;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 .text p {
   font-family: 'TT Firs Neue';
-  height: 100px;
-  font-size: 18px;
+  height: 80px;
+  font-size: 16px;
   color: #f0f0f0;
   font-weight: 400;
 }
