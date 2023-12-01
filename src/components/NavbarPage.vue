@@ -70,7 +70,7 @@
     </ul>
 
     <div class="language" :class="{ remove: openMain }">
-      <SelectComponent  @selectChange="handleSelectChange" />
+      <SelectComponent />
 
       <span><a href="#contact">Связаться с нами</a></span>
 

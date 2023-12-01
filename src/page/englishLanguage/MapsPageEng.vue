@@ -6,7 +6,7 @@
       </Transition>
     </div>
 
-    <div class="left" style="transition: 0.5s" v-motion-slide-once-visible-top>
+    <div class="left" style="transition: 0.5s">
       <div class="about">
         <h1>
           <span>Connect with us </span>
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="right" style="transition: 0.5s" v-motion-slide-once-visible-bottom>
+    <div class="right" style="transition: 0.5s">
       <div class="text">
         <h1>Partnership with us</h1>
         <p>
@@ -90,7 +90,6 @@ const closeModal = () => {
   document.body.style.overflow = 'auto'
   isModalOpened.value = false
 }
-
 </script>
 
 <style scoped>

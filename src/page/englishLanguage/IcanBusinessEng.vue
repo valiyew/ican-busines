@@ -1,7 +1,7 @@
 <template>
   <div class="icanBusines">
     <div class="bg">
-      <div class="title" style="transition: 0.5s" v-motion-slide-visible-once-top>
+      <div class="title" style="transition: 0.5s" >
         <div class="about">
           <h1>
             <span>What is ican business? </span>
@@ -23,7 +23,7 @@
           </button>
         </a>
       </div>
-      <div class="img" style="transition: 0.5s" v-motion-slide-visible-once-bottom>
+      <div class="img" style="transition: 0.5s" >
         <img src="../../assets/images/businesImg.png" alt="" />
       </div>
     </div>

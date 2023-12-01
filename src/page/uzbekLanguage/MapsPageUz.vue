@@ -6,7 +6,7 @@
       </Transition>
     </div>
 
-    <div class="left" style="transition: 0.5s" v-motion-slide-visible-once-top>
+    <div class="left" style="transition: 0.5s" >
       <div class="about">
         <h1>
           <span>Biz bilan bog'laning</span>
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="right" style="transition: 0.5s" v-motion-slide-visible-once-bottom>
+    <div class="right" style="transition: 0.5s" >
       <div class="text">
         <h1>Biz bilan hamkorlik</h1>
         <p>

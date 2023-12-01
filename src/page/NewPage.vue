@@ -138,7 +138,7 @@
               <img src="../assets/images/newPageImg.png" alt="" height="200px" />
               <div class="mobileText">
                 <h3>Полное руководство по работе из дома с нашей платформой</h3>
-                <p>September 17, 2023 {{ a }}</p>
+                <p>September 17, 2023</p>
               </div>
             </div>
           </div>

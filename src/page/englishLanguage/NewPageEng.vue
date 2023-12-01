@@ -7,11 +7,10 @@
     </Transition>
 
     <div class="news" style="margin-top: 100px">
-      <h1 style="transition: 0.5s" v-motion-slide-visible-once-right>News</h1>
+      <h1 style="transition: 0.5s" >News</h1>
       <div
         style="display: flex; align-items: center; gap: 15px; transition: 0.5s"
-        v-motion-slide-visible-once-left
-      >
+              >
         <button
           style="
             background: #f5f5f5;
@@ -43,7 +42,7 @@
       <div
         class="owl-carousel owl-theme"
         style="margin-top: 50px; transition: 0.5s"
-        v-motion-slide-visible-once-bottom
+        
       >
         <div class="item" @click="openModal">
           <div class="card">

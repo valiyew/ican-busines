@@ -1,5 +1,5 @@
 <template>
-  <h1 style="margin-top: 80px; transition: 0.5s" v-motion-slide-visible-once-top>Our partners</h1>
+  <h1 style="margin-top: 80px; transition: 0.5s" >Our partners</h1>
 
   <div class="wrapper">
     <div class="slider" style="margin-top: 50px">
