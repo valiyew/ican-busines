@@ -24,8 +24,8 @@ const components = {
   Footer
 }
 
+// eslint-disable-next-line no-unused-vars
 const languages = localStorage.getItem('selectedLanguage')
-console.log(languages)
 </script>
 
 <style></style>

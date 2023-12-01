@@ -6,8 +6,8 @@ import { Home } from '../page'
 import { HomeEng } from '../page/englishLanguage/index'
 import { HomeUz } from '../page/uzbekLanguage/index'
 
+// eslint-disable-next-line no-unused-vars
 const languages = localStorage.getItem('selectedLanguage')
-console.log(languages)
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

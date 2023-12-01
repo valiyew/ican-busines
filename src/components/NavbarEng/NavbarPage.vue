@@ -66,7 +66,7 @@
     </ul>
 
     <div class="language" :class="{ remove: openMain }">
-      <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
+      <SelectComponent  @selectChange="handleSelectChange" />
 
       <span style="cursor: pointer"><a href="#connect">Connect with us </a></span>
       <div class="mains">

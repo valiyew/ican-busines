@@ -67,7 +67,7 @@
     </ul>
 
     <div class="language" :class="{ remove: openMain }">
-      <SelectComponent :selectedValue="selectedValue" @selectChange="handleSelectChange" />
+      <SelectComponent  @selectChange="handleSelectChange" />
 
       <span><a href="#contact">Biz bilan bog'lanish </a></span>
 
