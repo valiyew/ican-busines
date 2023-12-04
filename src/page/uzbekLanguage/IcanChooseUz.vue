@@ -122,7 +122,7 @@
 
 .icanChoose h2 {
   font-family: 'TT Firs Neue';
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
 }
 .icanChoose .left .a {
@@ -139,7 +139,7 @@
   width: 350px;
 }
 .a img {
-  width: 280px;
+  width: 260px;
 }
 .title button {
   font-family: 'TT Firs Neue';

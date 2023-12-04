@@ -1,12 +1,14 @@
 <template>
   <div>
     <HeroUz />
-    <IcanBusinessUz />
-    <IcanChooseUz />
-    <NewPageUz />
-    <PartnerUz />
-    <MapsUz />
-    <FooterUz />
+    <div class="container">
+      <IcanBusinessUz />
+      <IcanChooseUz />
+      <NewPageUz />
+      <PartnerUz />
+      <MapsUz />
+      <FooterUz />
+    </div>
   </div>
 </template>
 
@@ -21,3 +23,5 @@ import {
   FooterUz
 } from './index'
 </script>
+
+<style scoped></style>

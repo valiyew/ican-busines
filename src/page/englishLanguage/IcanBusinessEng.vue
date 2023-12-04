@@ -1,7 +1,7 @@
 <template>
   <div class="icanBusines">
     <div class="bg">
-      <div class="title" style="transition: 0.5s" >
+      <div class="title" style="transition: 0.5s">
         <div class="about">
           <h1>
             <span>What is ican business? </span>
@@ -23,7 +23,7 @@
           </button>
         </a>
       </div>
-      <div class="img" style="transition: 0.5s" >
+      <div class="img" style="transition: 0.5s">
         <img src="../../assets/images/businesImg.png" alt="" />
       </div>
     </div>
@@ -31,7 +31,6 @@
 </template>
 
 <script></script>
-
 <style scoped>
 .icanBusines {
   padding: 30px 150px;
@@ -52,7 +51,7 @@
   height: 100%;
 }
 .bg .title {
-  width: 50%;
+  width: 40%;
 }
 .title .about {
   padding: 55px 0;
@@ -104,13 +103,9 @@
   box-shadow: 4px 8px 10px 0px #606060;
 }
 
-.img .imgBg {
-  width: 600px;
-}
-.img .imgMac {
-  position: absolute;
-  bottom: 0;
-  top: 20px;
+.img img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1900px) {

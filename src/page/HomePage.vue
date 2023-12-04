@@ -1,12 +1,14 @@
 <template>
   <div>
     <Hero />
-    <IcanBusines />
-    <IcanChoose />
-    <NewPage />
-    <Partner />
-    <MapsPage />
-    <Footer />
+    <div class="container">
+      <IcanBusines />
+      <IcanChoose />
+      <NewPage />
+      <Partner />
+      <MapsPage />
+      <Footer />
+    </div>
   </div>
 </template>
 

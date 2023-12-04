@@ -1,7 +1,7 @@
 <template>
   <div class="icanBusines">
     <div class="bg">
-      <div class="title" style="transition: 0.5s" >
+      <div class="title" style="transition: 0.5s">
         <div class="about">
           <h1>
             <span>Ican biznes nima? </span>
@@ -24,8 +24,8 @@
           </button>
         </a>
       </div>
-      <div style="transition: 0.5s" class="img" >
-        <img src="../../assets/images/businesImg.png" alt="">
+      <div style="transition: 0.5s" class="img">
+        <img src="../../assets/images/businesImg.png" alt="" />
         <!-- <img class="imgBg" src="../../assets/images/macBg.png" alt="" /> -->
         <!-- <img class="imgMac" src="../../assets/images/macAir.png" alt="" /> -->
       </div>
@@ -55,7 +55,7 @@
   height: 100%;
 }
 .bg .title {
-  width: 50%;
+  width: 40%;
 }
 .title .about {
   padding: 55px 0;
@@ -107,13 +107,9 @@
   box-shadow: 4px 8px 10px 0px #606060;
 }
 
-.img .imgBg {
-  width: 600px;
-}
-.img .imgMac {
-  position: absolute;
-  bottom: 0;
-  top: 20px;
+.img img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1900px) {

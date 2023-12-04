@@ -1,12 +1,14 @@
 <template>
   <div>
     <HeroEng />
-    <IcanBusinessEng />
-    <IcanChooseEng />
-    <NewPageEng />
-    <PartnerEng />
-    <MapsEng />
-    <FooterEng />
+    <div class="container">
+      <IcanBusinessEng />
+      <IcanChooseEng />
+      <NewPageEng />
+      <PartnerEng />
+      <MapsEng />
+      <FooterEng />
+    </div>
   </div>
 </template>
 

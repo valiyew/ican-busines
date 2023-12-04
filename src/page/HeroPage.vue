@@ -54,16 +54,6 @@ const closeModal = () => {
 </script>
 
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
 .hero {
   height: 100vh;
   width: 100%;
@@ -107,7 +97,7 @@ const closeModal = () => {
 }
 
 .callBtn {
-  width: 230px;
+  width: 250px;
   gap: 10px;
   font-family: 'TT Firs Neue';
   font-size: 18px;
@@ -121,7 +111,7 @@ const closeModal = () => {
 }
 
 .addUser {
-  width: 230px;
+  width: 250px;
   font-family: 'TT Firs Neue';
   font-size: 18px;
   font-weight: 500;
@@ -433,6 +423,69 @@ const closeModal = () => {
   .about .img {
     height: 500px;
     width: 85%;
+  }
+}
+@media screen and (max-height: 750px) {
+  .hero {
+    height: 120vh;
+  }
+}
+@media screen and (min-height: 1000px) {
+  .hero {
+    height: 90vh;
+  }
+  .about .title {
+    margin-top: 50px;
+  }
+  .title h1 {
+    font-size: 54px;
+  }
+
+  .title p {
+    font-size: 24px;
+  }
+
+  .buttons button {
+    font-size: 22px;
+    width: 280px;
+    padding: 25px 10px;
+  }
+
+  .about .img {
+    height: 800px;
+  }
+}
+@media screen and (min-height: 1300px) {
+  .hero {
+    height: 90vh;
+  }
+  .about .title {
+    margin-top: 70px;
+  }
+  .title h1 {
+    font-size: 54px;
+  }
+
+  .title p {
+    font-size: 24px;
+  }
+  .buttons button {
+    font-size: 22px;
+    width: 100%;
+    padding: 25px 10px;
+  }
+  .about .img {
+    height: 900px;
+  }
+  
+  .buttons{
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .hero{
+      height: 145vh;
+    }
   }
 }
 </style>

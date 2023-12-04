@@ -39,7 +39,7 @@
     </div>
 
     <div class="row">
-      <div class="owl-carousel owl-theme" style="margin-top: 50px; transition: 0.5s" >
+      <div class="owl-carousel owl-theme" style="margin-top: 50px; transition: 0.5s">
         <div class="item" @click="openModal">
           <div class="card">
             <div class="card-body">
@@ -191,7 +191,7 @@ export default {
             items: 1
           },
           1150: {
-            items: 1.2
+            items: 1
           },
           1200: {
             items: 1.4
@@ -236,11 +236,11 @@ export default {
   border-radius: 20px;
   background: #f7f8fa;
   border: none;
-  padding: 10px;
+  padding: 5px;
 }
 
 .card h3 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   font-family: 'TT Firs Neue';
   color: #172d33;
@@ -311,11 +311,21 @@ export default {
   .desktopText h3 {
     font-size: 24px;
   }
+
+  .card img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .containerr {
     padding: 20px 150px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .card img {
+    width: 50%;
   }
 }
 </style>
