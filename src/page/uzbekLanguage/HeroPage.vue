@@ -169,6 +169,31 @@ const closeModal = () => {
 .sponsors {
   width: 100%;
 }
+
+@media screen and (min-width: 1900px) {
+  @media screen and (min-height: 1100px) {
+    .hero {
+      height: 100vh;
+    }
+
+    .about .img {
+      height: 930px;
+    }
+
+    .title h1 {
+      font-size: 48px;
+    }
+
+    .title p {
+      font-size: 24px;
+    }
+
+    .buttons button {
+      padding: 25px 10px;
+      font-size: 20px;
+    }
+  }
+}
 @media screen and (max-width: 1900px) {
   .hero {
     height: 100vh;
@@ -205,8 +230,51 @@ const closeModal = () => {
   }
 
   .about .img {
-    height: 600px;
+    height: 750px;
     width: 45%;
+  }
+  @media screen and (min-height: 1100px) {
+    .about .img {
+      height: 930px;
+    }
+
+    .title h1 {
+      font-size: 48px;
+    }
+
+    .title p {
+      font-size: 24px;
+    }
+
+    .buttons button {
+      padding: 25px 10px;
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .about .img {
+    height: 650px;
+  }
+  @media screen and (min-height: 1100px) {
+    .about .img {
+      height: 930px;
+    }
+
+    .title h1 {
+      font-size: 48px;
+    }
+
+    .title p {
+      font-size: 24px;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
+    .buttons button {
+      width: 100%;
+    }
   }
 }
 @media screen and (max-width: 1400px) {
@@ -225,7 +293,7 @@ const closeModal = () => {
 
   .title h1 {
     text-align: left;
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .title p {
@@ -240,18 +308,36 @@ const closeModal = () => {
   }
 
   .buttons button {
-    padding: 15px 20px;
-    font-size: 18px;
+    padding: 20px 5px;
+    font-size: 16px;
   }
 
   .about .img {
-    height: 580px;
+    height: 650px;
     width: 45%;
   }
+  @media screen and (min-height: 1100px) {
+    .about .img {
+      height: 930px;
+    }
+
+    .title h1 {
+      font-size: 48px;
+    }
+
+    .title p {
+      font-size: 24px;
+    }
+
+    .buttons button {
+      padding: 25px 10px;
+      font-size: 20px;
+    }
+  }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
   .hero {
-    height: 105vh;
+    height: 100vh;
   }
 
   .about {
@@ -286,13 +372,31 @@ const closeModal = () => {
   }
 
   .about .img {
-    height: 680px;
+    height: 630px;
     width: 50%;
+  }
+  @media screen and (min-height: 1100px) {
+    .about .img {
+      height: 930px;
+    }
+
+    .title h1 {
+      font-size: 48px;
+    }
+
+    .title p {
+      font-size: 24px;
+    }
+
+    .buttons button {
+      padding: 25px 10px;
+      font-size: 20px;
+    }
   }
 }
 @media screen and (max-width: 1100px) {
   .hero {
-    height: 195vh;
+    height: 170vh;
   }
 
   .about {
@@ -329,10 +433,20 @@ const closeModal = () => {
     height: 700px;
     width: 85%;
   }
+  @media screen and (min-height: 1100px) {
+    .hero {
+      height: 140vh;
+    }
+
+    .buttons button {
+      padding: 25px 10px;
+      font-size: 22px;
+    }
+  }
 }
 @media screen and (max-width: 992px) {
   .hero {
-    height: 180vh;
+    height: 155vh;
   }
 
   .about {
@@ -367,10 +481,31 @@ const closeModal = () => {
     height: 600px;
     width: 85%;
   }
+  @media screen and (min-height: 1100px) {
+    .hero {
+      height: 130vh;
+    }
+
+    .buttons button {
+      padding: 25px 10px;
+      font-size: 22px;
+    }
+  }
+}
+@media screen and (max-width: 876px) {
+  .hero {
+    height: 160vh;
+  }
+
+  @media screen and (min-height: 1100px) {
+    .hero{
+      height: 125vh;
+    }
+  }
 }
 @media screen and (max-width: 776px) {
   .hero {
-    height: 165vh;
+    height: 135vh;
   }
 
   .about {
@@ -404,10 +539,20 @@ const closeModal = () => {
     height: 500px;
     width: 85%;
   }
+  @media screen and (min-height: 1100px) {
+    .hero {
+      height: 110vh;
+    }
+
+    .buttons button {
+      padding: 25px 10px;
+      font-size: 22px;
+    }
+  }
 }
 @media screen and (max-width: 576px) {
   .hero {
-    height: 160vh;
+    height: 140vh;
   }
 
   .about {
@@ -441,67 +586,14 @@ const closeModal = () => {
     height: 500px;
     width: 85%;
   }
-}
-@media screen and (max-height: 750px) {
-  .hero {
-    height: 120vh;
-  }
-}
-@media screen and (min-height: 1000px) {
-  .hero {
-    height: 90vh;
-  }
-  .about .title {
-    margin-top: 50px;
-  }
-  .title h1 {
-    font-size: 54px;
-  }
+  @media screen and (min-height: 1100px) {
+    .hero {
+      height: 105vh;
+    }
 
-  .title p {
-    font-size: 24px;
-  }
-
-  .buttons button {
-    font-size: 22px;
-    width: 280px;
-    padding: 25px 10px;
-  }
-
-  .about .img {
-    height: 800px;
-  }
-}
-@media screen and (min-height: 1300px) {
-  .hero {
-    height: 90vh;
-  }
-  .about .title {
-    margin-top: 70px;
-  }
-  .title h1 {
-    font-size: 54px;
-  }
-
-  .title p {
-    font-size: 24px;
-  }
-  .buttons button {
-    font-size: 22px;
-    width: 100%;
-    padding: 25px 10px;
-  }
-  .about .img {
-    height: 900px;
-  }
-  
-  .buttons{
-    flex-direction: column;
-  }
-  
-  @media screen and (max-width: 1100px) {
-    .hero{
-      height: 145vh;
+    .buttons button {
+      padding: 20px 10px;
+      font-size: 22px;
     }
   }
 }

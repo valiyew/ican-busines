@@ -259,7 +259,7 @@ const closeModal = () => {
   }
 }
 
-@media screen and (min-width: 876px) {
+@media screen and (min-width: 1050px) {
   .about {
     width: 350px;
   }
@@ -275,7 +275,15 @@ const closeModal = () => {
 @media screen and (min-width: 1200px) {
   .right button,
   .left button {
-    width: 50%;
+    width: 70%;
+  }
+}
+
+@media screen and  (max-width: 1500px) {
+  @media screen and (min-height: 1100px) {
+    .left button, .right button{
+      width: 100%;
+    }
   }
 }
 </style>

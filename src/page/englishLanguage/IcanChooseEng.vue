@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div style="transition: 0.5s" class="right" nce-right>
+      <div style="transition: 0.5s" class="right" >
         <div class="sklad">
           <div>
             <h2>Stability warehouse management</h2>
@@ -175,10 +175,12 @@
 
 .AandBSection div img {
   width: 250px;
+  
 }
 
 .right .sklad {
   width: 100%;
+  height: 100%;
   border-radius: 30px;
   padding: 20px 0px 0px 20px;
   background-image: url(../../assets/images/heroImg.svg);
@@ -186,6 +188,7 @@
   background-repeat: no-repeat;
 }
 .sklad img {
+  margin-top: 104px;
   width: 100%;
   border-radius: 20px;
 }
