@@ -261,10 +261,11 @@ const closeModal = () => {
     padding: 20px 150px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .right button,
   .left button {
-    width: 50%;
+    width: 70%;
   }
 }
 </style>

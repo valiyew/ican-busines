@@ -6,7 +6,7 @@
       </Transition>
     </div>
 
-    <div class="left" style="transition: 0.5s" >
+    <div class="left" style="transition: 0.5s">
       <div class="about">
         <h1>
           <span>Biz bilan bog'laning</span>
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="right" style="transition: 0.5s" >
+    <div class="right" style="transition: 0.5s">
       <div class="text">
         <h1>Biz bilan hamkorlik</h1>
         <p>
@@ -271,15 +271,15 @@ const closeModal = () => {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 1350px) {
-  .maps {
-    padding: 20px 150px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .right button,
   .left button {
-    width: 50%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .maps {
+    padding: 20px 150px;
   }
 }
 </style>

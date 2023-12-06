@@ -164,16 +164,17 @@ const closeModal = () => {
     }
 
     .title h1 {
-      font-size: 48px;
+      font-size: 54px;
     }
 
     .title p {
-      font-size: 24px;
+      font-size: 26px;
     }
 
     .buttons button {
+      width: 330px;
       padding: 25px 10px;
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 }

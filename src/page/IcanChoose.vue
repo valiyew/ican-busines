@@ -179,6 +179,7 @@
 
 .right .sklad {
   width: 100%;
+  height: 100%;
   border-radius: 30px;
   padding: 20px 0px 0px 20px;
   background-image: url(../assets/images/heroImg.svg);
@@ -187,6 +188,7 @@
 }
 .sklad img {
   width: 100%;
+  margin-top: 105px;
   border-radius: 20px;
 }
 .sklad h2 {

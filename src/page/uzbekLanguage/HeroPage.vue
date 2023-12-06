@@ -181,16 +181,17 @@ const closeModal = () => {
     }
 
     .title h1 {
-      font-size: 48px;
+      font-size: 54px;
     }
 
     .title p {
-      font-size: 24px;
+      font-size: 26px;
     }
 
     .buttons button {
+      width: 330px;
       padding: 25px 10px;
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 }
@@ -498,7 +499,7 @@ const closeModal = () => {
   }
 
   @media screen and (min-height: 1100px) {
-    .hero{
+    .hero {
       height: 125vh;
     }
   }
@@ -587,12 +588,12 @@ const closeModal = () => {
     width: 85%;
   }
   @media screen and (min-height: 700px) {
-    .hero{
+    .hero {
       height: 150vh;
     }
   }
   @media screen and (min-height: 800px) {
-    .hero{
+    .hero {
       height: 140vh;
     }
   }
@@ -609,21 +610,21 @@ const closeModal = () => {
 }
 @media screen and (min-width: 576px) {
   @media screen and (min-height: 700px) {
-    .hero{
+    .hero {
       height: 160vh;
     }
   }
 }
 @media screen and (min-width: 776px) {
   @media screen and (min-height: 700px) {
-    .hero{
+    .hero {
       height: 185vh;
     }
   }
 }
 @media screen and (min-width: 1100px) {
   @media screen and (min-height: 700px) {
-    .hero{
+    .hero {
       height: 105vh;
     }
   }
