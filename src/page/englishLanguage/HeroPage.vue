@@ -426,6 +426,9 @@ const closeModal = () => {
     .hero {
       height: 140vh;
     }
+    .about .img {
+      height: 1050px;
+    }
 
     .buttons button {
       padding: 25px 10px;
@@ -474,7 +477,9 @@ const closeModal = () => {
     .hero {
       height: 130vh;
     }
-
+    .about .img {
+      height: 1050px;
+    }
     .buttons button {
       padding: 25px 10px;
       font-size: 22px;
@@ -532,7 +537,9 @@ const closeModal = () => {
     .hero {
       height: 110vh;
     }
-
+    .about .img {
+      height: 1050px;
+    }
     .buttons button {
       padding: 25px 10px;
       font-size: 22px;

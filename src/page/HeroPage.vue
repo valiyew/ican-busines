@@ -422,6 +422,10 @@ const closeModal = () => {
       height: 140vh;
     }
 
+    .about .img {
+      height: 1050px;
+    }
+
     .buttons button {
       padding: 25px 10px;
       font-size: 22px;
@@ -468,6 +472,9 @@ const closeModal = () => {
   @media screen and (min-height: 1100px) {
     .hero {
       height: 130vh;
+    }
+    .about .img {
+      height: 1050px;
     }
 
     .buttons button {
@@ -528,6 +535,9 @@ const closeModal = () => {
       height: 110vh;
     }
 
+    .about .img {
+      height: 1050px;
+    }
     .buttons button {
       padding: 25px 10px;
       font-size: 22px;
@@ -571,12 +581,12 @@ const closeModal = () => {
     width: 85%;
   }
   @media screen and (min-height: 700px) {
-    .hero{
+    .hero {
       height: 150vh;
     }
   }
   @media screen and (min-height: 800px) {
-    .hero{
+    .hero {
       height: 140vh;
     }
   }
@@ -594,21 +604,21 @@ const closeModal = () => {
 
 @media screen and (min-width: 576px) {
   @media screen and (min-height: 700px) {
-    .hero{
+    .hero {
       height: 160vh;
     }
   }
 }
 @media screen and (min-width: 776px) {
   @media screen and (min-height: 700px) {
-    .hero{
+    .hero {
       height: 185vh;
     }
   }
 }
 @media screen and (min-width: 1100px) {
   @media screen and (min-height: 700px) {
-    .hero{
+    .hero {
       height: 105vh;
     }
   }
