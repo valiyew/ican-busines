@@ -9,13 +9,29 @@ import { HomeUz } from '../page/uzbekLanguage/index'
 // eslint-disable-next-line no-unused-vars
 const languages = localStorage.getItem('selectedLanguage')
 
+let defaultHomeComponent = ''
+
+switch (languages) {
+  case 'uz':
+    defaultHomeComponent = HomeUz
+    break
+  case 'ru':
+    defaultHomeComponent = Home
+    break
+  case 'en':
+    defaultHomeComponent = HomeEng
+    break
+  default:
+    defaultHomeComponent = Home
+}
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: defaultHomeComponent
     },
 
     {
@@ -53,7 +69,7 @@ const router = createRouter({
       name: 'contactUz',
       component: CallUz
     },
-    
+
     {
       path: '/news/ru',
       name: 'aboutRu',
