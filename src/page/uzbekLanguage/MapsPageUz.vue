@@ -92,7 +92,6 @@ const closeModal = () => {
 }
 </script>
 
-
 <style scoped>
 .yandexMap {
   border-radius: 40px;
@@ -291,6 +290,12 @@ const closeModal = () => {
     .right button {
       width: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .left button {
+    margin-top: 40px;
   }
 }
 </style>

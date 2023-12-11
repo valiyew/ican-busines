@@ -289,4 +289,10 @@ const closeModal = () => {
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .left button {
+    margin-top: 40px;
+  }
+}
 </style>
