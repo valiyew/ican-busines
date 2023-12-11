@@ -8,17 +8,18 @@ import { HomeUz } from '../page/uzbekLanguage/index'
 
 // eslint-disable-next-line no-unused-vars
 const languages = localStorage.getItem('selectedLanguage')
+console.log(languages)
 
 let defaultHomeComponent = ''
 
 switch (languages) {
-  case 'uz':
+  case 'Uz':
     defaultHomeComponent = HomeUz
     break
-  case 'ru':
+  case 'Ru':
     defaultHomeComponent = Home
     break
-  case 'en':
+  case 'En':
     defaultHomeComponent = HomeEng
     break
   default:
