@@ -1,8 +1,8 @@
 <template>
   <ul class="footer">
     <div>
-      <p>location</p>
-      <li>Tashkent city, Shakhrisabz street 16A</li>
+      <p>Location</p>
+      <li>C.Tashkent, S.Shakhrisabz 16A</li>
     </div>
     <div>
       <p>Phone number:</p>
@@ -26,7 +26,6 @@
 
   <div class="muallif">
     <p>2023 All rights reserved.</p>
-    <p>Design by <span style="color: blue">Mazmoon Group</span></p>
   </div>
 </template>
 
@@ -47,7 +46,7 @@ export default {}
 }
 .footer li {
   font-family: 'TT Firs Neue';
-  
+
   list-style: none;
   font-size: 18px;
   font-weight: 500;
@@ -61,7 +60,7 @@ export default {}
 
 .muallif {
   font-family: 'TT Firs Neue';
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,7 +108,6 @@ export default {}
   }
   .muallif {
     flex-direction: row;
-    
   }
 }
 

@@ -1,8 +1,8 @@
 <template>
   <ul class="footer">
     <div>
-      <p>местоположение</p>
-      <li>Город Ташкент, улица Шахрисабз 16А</li>
+      <p>Местоположение</p>
+      <li>Г.Ташкент, У.Шахрисабз 16А</li>
     </div>
     <div>
       <p>Тел.номер:</p>
@@ -26,7 +26,6 @@
 
   <div class="muallif">
     <p>2023. Все права защищены.</p>
-    <p>Design by <span style="color: blue">Mazmoon Group</span></p>
   </div>
 </template>
 
@@ -47,7 +46,7 @@ export default {}
 }
 .footer li {
   font-family: 'TT Firs Neue';
-  
+
   list-style: none;
   font-size: 18px;
   font-weight: 500;
@@ -61,7 +60,7 @@ export default {}
 
 .muallif {
   font-family: 'TT Firs Neue';
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,7 +108,6 @@ export default {}
   }
   .muallif {
     flex-direction: row;
-    
   }
 }
 

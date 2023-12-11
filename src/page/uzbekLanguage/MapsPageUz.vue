@@ -92,12 +92,14 @@ const closeModal = () => {
 }
 </script>
 
+
 <style scoped>
 .yandexMap {
   border-radius: 40px;
   border: 1px solid #c2c2c3;
   filter: grayscale(30%) sepia(15%) hue-rotate(185deg) brightness(97%);
 }
+
 .maps {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -111,8 +113,6 @@ const closeModal = () => {
   position: relative;
 }
 .about .absaluteBox {
-  font-family: 'TT Firs Neue';
-
   position: absolute;
   top: 2%;
   right: 8%;
@@ -121,16 +121,14 @@ const closeModal = () => {
   border-radius: 15px;
   padding: 10px 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   box-shadow: 4px 8px 10px 0px #606060;
 }
 .about h1 {
-  font-family: 'TT Firs Neue';
-
   display: flex;
   align-items: center;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   gap: 10px;
 }
 .left {
@@ -143,8 +141,8 @@ const closeModal = () => {
 
 .left p {
   font-family: 'TT Firs Neue';
-  margin-bottom: 20px;
-  font-size: 18px;
+  height: 80px;
+  font-size: 16px;
   font-weight: 400;
 }
 .left .map {
@@ -161,8 +159,6 @@ const closeModal = () => {
 }
 .left button {
   font-family: 'TT Firs Neue';
-  font-size: 16px;
-  font-weight: 500;
   margin: 30px 0px;
   padding: 15px 20px;
   border-radius: 15px;
@@ -192,27 +188,26 @@ const closeModal = () => {
   background-size: cover;
   border-radius: 30px;
   background-repeat: no-repeat;
-  padding: 40px 30px 0px 30px;
+}
+.right .text {
+  padding: 40px 30px 40px 30px;
 }
 .right .text h1 {
   font-family: 'TT Firs Neue';
-
   padding: 60px 0px;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 .text p {
   font-family: 'TT Firs Neue';
-  margin-bottom: 20px;
-  font-size: 18px;
+  height: 80px;
+  font-size: 16px;
   color: #f0f0f0;
   font-weight: 400;
 }
 .right button {
   font-family: 'TT Firs Neue';
-  font-size: 16px;
-  font-weight: 500;
   margin: 30px 0px;
   padding: 15px 20px;
   border-radius: 15px;
@@ -232,10 +227,10 @@ const closeModal = () => {
 
 .img img {
   position: absolute;
-  bottom: 0%;
-  right: 10px;
-  width: 500px;
-  /* top: 1%; */
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  /* height: 50%; */
 }
 
 @media screen and (min-width: 300px) {
@@ -250,6 +245,10 @@ const closeModal = () => {
   .left button {
     width: 100%;
   }
+
+  .text p {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -261,14 +260,22 @@ const closeModal = () => {
   .right .text h1 {
     font-size: 30px;
   }
+  .text p {
+    margin-bottom: 0px;
+  }
 }
 
-@media screen and (min-width: 876px) {
+@media screen and (min-width: 1050px) {
   .about {
     width: 350px;
   }
   .maps {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .maps {
+    padding: 20px 150px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -277,9 +284,13 @@ const closeModal = () => {
     width: 70%;
   }
 }
-@media screen and (min-width: 1350px) {
-  .maps {
-    padding: 20px 150px;
+
+@media screen and (max-width: 1500px) {
+  @media screen and (min-height: 1100px) {
+    .left button,
+    .right button {
+      width: 100%;
+    }
   }
 }
 </style>

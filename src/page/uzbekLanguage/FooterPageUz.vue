@@ -2,7 +2,7 @@
   <ul class="footer">
     <div>
       <p>Manzil</p>
-      <li>Toshkent shahri, Shahrisabz ko‘chasi 16A</li>
+      <li>Sh.Toshkent, K.Shahrisabz 16A</li>
     </div>
     <div>
       <p>Tel raqam:</p>
@@ -26,7 +26,6 @@
 
   <div class="muallif">
     <p>2023 Barcha huquqlar himoyalangan.</p>
-    <p>Dizayn tomonidan <span style="color: blue">Mazmoon guruhi</span></p>
   </div>
 </template>
 

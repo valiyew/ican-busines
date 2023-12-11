@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div style="transition: 0.5s" class="right" >
+      <div style="transition: 0.5s" class="right">
         <div class="sklad">
           <div>
             <h2>Stability warehouse management</h2>
@@ -84,7 +84,7 @@
 
 .about h1 span {
   font-family: 'TT Firs Neue';
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
 .icanShooseBox .about {
@@ -139,7 +139,7 @@
   width: 350px;
 }
 .a img {
-  width: 280px;
+  width: 250px;
 }
 .title button {
   font-family: 'TT Firs Neue';
@@ -174,11 +174,12 @@
 }
 
 .AandBSection div img {
-  width: 250px;
-  
+  /* width: 250px; */
+  width: 100px;
 }
 
 .right .sklad {
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -188,9 +189,9 @@
   background-repeat: no-repeat;
 }
 .sklad img {
-  margin-top: 104px;
-  width: 100%;
-  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .sklad h2 {
   margin-top: 20px;
@@ -210,6 +211,9 @@
 @media screen and (max-width: 1400px) {
   .icanChoose {
     flex-direction: column;
+  }
+  .right .sklad {
+    height: 650px;
   }
 
   .icanChoose .right .sklad {
@@ -257,6 +261,9 @@
   .icanChoose .right .sklad {
     width: 100%;
   }
+  .right .sklad {
+    height: 700px;
+  }
   .left .a {
     width: 100%;
   }
@@ -276,13 +283,17 @@
 
 @media screen and (min-width: 300px) {
   .AandBSection .absoluteImg {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .AandBSection .absoluteImg {
     width: 200px;
   }
 }
-
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 1000px) {
   .AandBSection .absoluteImg {
-    width: 260px;
+    width: 190px;
   }
 }
 </style>

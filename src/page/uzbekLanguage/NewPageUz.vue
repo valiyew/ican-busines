@@ -185,7 +185,7 @@ export default {
             items: 1
           },
           900: {
-            items: 1.3
+            items: 1
           },
           1000: {
             items: 1
@@ -194,10 +194,10 @@ export default {
             items: 1
           },
           1200: {
-            items: 1.4
+            items: 1.5
           },
           1400: {
-            items: 1.6
+            items: 1.3
           },
           1500: {
             items: 2

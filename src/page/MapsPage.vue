@@ -184,7 +184,9 @@ const closeModal = () => {
   background-size: cover;
   border-radius: 30px;
   background-repeat: no-repeat;
-  padding: 40px 30px 0px 30px;
+}
+.right .text {
+  padding: 40px 30px 40px 30px;
 }
 .right .text h1 {
   font-family: 'TT Firs Neue';
@@ -221,10 +223,10 @@ const closeModal = () => {
 
 .img img {
   position: absolute;
-  bottom: 0%;
-  right: 10px;
-  width: 500px;
-  /* top: 1%; */
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  /* height: 50%; */
 }
 
 @media screen and (min-width: 300px) {
@@ -279,9 +281,10 @@ const closeModal = () => {
   }
 }
 
-@media screen and  (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   @media screen and (min-height: 1100px) {
-    .left button, .right button{
+    .left button,
+    .right button {
       width: 100%;
     }
   }

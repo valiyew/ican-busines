@@ -1,6 +1,6 @@
 <template>
   <div id="choose" class="icanShooseBox">
-    <div style="transition: 0.5s" class="about" >
+    <div style="transition: 0.5s" class="about">
       <h1 style="display: flex">
         <span>Почему выбирают ican business</span>
         <img class="check" src="../assets/images/check.svg" alt="" />
@@ -10,7 +10,7 @@
 
     <div class="icanChoose">
       <div class="left">
-        <div style="transition: 0.5s" class="a" >
+        <div style="transition: 0.5s" class="a">
           <div class="title">
             <h2>Все инструменты для управление онлайн</h2>
             <p style="margin-top: 20px">
@@ -28,7 +28,7 @@
           <img style="border-radius: 15px" src="../assets/images/imgA.png" alt="" />
         </div>
 
-        <div style="transition: 0.5s" class="AandBSection" >
+        <div style="transition: 0.5s" class="AandBSection">
           <div class="b" style="position: relative; height: 350px">
             <div style="width: 100%">
               <h2>Стабильность управление складами</h2>
@@ -139,7 +139,7 @@
   width: 350px;
 }
 .a img {
-  width: 280px;
+  width: 250px;
 }
 .title button {
   font-family: 'TT Firs Neue';
@@ -174,10 +174,12 @@
 }
 
 .AandBSection div img {
-  width: 250px;
+  /* width: 250px; */
+  width: 100px;
 }
 
 .right .sklad {
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -187,9 +189,9 @@
   background-repeat: no-repeat;
 }
 .sklad img {
-  width: 100%;
-  margin-top: 105px;
-  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .sklad h2 {
   margin-top: 20px;
@@ -209,6 +211,9 @@
 @media screen and (max-width: 1400px) {
   .icanChoose {
     flex-direction: column;
+  }
+  .right .sklad {
+    height: 650px;
   }
 
   .icanChoose .right .sklad {
@@ -256,6 +261,9 @@
   .icanChoose .right .sklad {
     width: 100%;
   }
+  .right .sklad {
+    height: 700px;
+  }
   .left .a {
     width: 100%;
   }
@@ -275,13 +283,17 @@
 
 @media screen and (min-width: 300px) {
   .AandBSection .absoluteImg {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .AandBSection .absoluteImg {
     width: 200px;
   }
 }
-
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 1000px) {
   .AandBSection .absoluteImg {
-    width: 260px;
+    width: 190px;
   }
 }
 </style>
