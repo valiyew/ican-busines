@@ -140,7 +140,7 @@ const closeModal = () => {
 
 .about .img {
   width: 48%;
-  height: 600px;
+  height: 570px;
   background-image: url(../assets/images/aboutImg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,7 +214,7 @@ const closeModal = () => {
   }
 
   .about .img {
-    height: 670px;
+    height: 650px;
     width: 45%;
   }
   @media screen and (min-height: 1100px) {
