@@ -227,7 +227,8 @@ const closeModal = () => {
 .img img {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  left: 7%;
+  width: 85%;
   z-index: 10;
   /* height: 50%; */
 }
@@ -292,10 +293,39 @@ const closeModal = () => {
     }
   }
 }
+@media screen and (max-width: 1100px) {
+  .right button {
+    margin-bottom: 100px;
+  }
+  .img img {
+    left: 20%;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .right button {
+    margin-bottom: 100px;
+  }
+
+  .img img {
+    left: 12%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 776px) {
+  .img img {
+    left: 0;
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 576px) {
-  .left button {
+  /* .left button {
     margin-top: 40px;
   }
+  .img img {
+    left: 0;
+    width: 100%;
+  } */
 }
 </style>
