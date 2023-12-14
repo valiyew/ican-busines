@@ -24,17 +24,18 @@ import {
   FooterUz
 } from './index'
 useHead({
-  title: 'Ican Business Uz About | Автоматизация Рассрочки и Автосписание Платежей',
+  title:
+    "Ican Business Uz About | Bo'lib-bo'lib to'lash va to'lovlarni avtomatik hisobdan chiqarishni avtomatlashtirish",
   meta: [
     {
       name: 'description',
       content:
-        'IT решения для вашего бизнеса. Автоматизация рассрочки, складская система, ERP решения. Мы снизим ризки ведения вашего бизнеса, а также поможем повысить прозначность ваших бизнес процессов'
+        "Biznesingiz uchun IT yechimlari. To'lovlarni avtomatlashtirish, ombor tizimi, ERP yechimlari. Biz biznesingizni yuritishdagi xatarlarni kamaytiramiz va biznes jarayonlaringizning yaxlitligini oshirishga yordam beramiz"
     },
     {
       name: 'keywords',
       content:
-        "Ican, ican, ICAN, IT, it, IT, companya, company, Avtomatlashtirish, Bo'lib to'lash, O'zbekiston, ERP, Ombor buxgalteriya, IT kompaniyasi, Uz, Ru, En, Kreditlar, shoshilinch to'lov"
+        "ican business, ican biznes,Ican biznes, Ican, ican, ICAN, IT, it, IT, companya, company, Avtomatlashtirish, Bo'lib to'lash, O'zbekiston, ERP, Ombor buxgalteriya, IT kompaniyasi, Uz, Ru, En, Kreditlar, shoshilinch to'lov"
     }
   ]
 })

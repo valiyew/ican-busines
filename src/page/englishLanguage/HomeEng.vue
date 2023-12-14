@@ -24,17 +24,17 @@ import {
   FooterEng
 } from './index'
 useHead({
-  title: 'Ican Business En About | Автоматизация Рассрочки и Автосписание Платежей',
+  title: 'Ican Business En About | Automation of Installments and Automatic Write-Off of Payments',
   meta: [
     {
       name: 'description',
       content:
-        'IT решения для вашего бизнеса. Автоматизация рассрочки, складская система, ERP решения. Мы снизим ризки ведения вашего бизнеса, а также поможем повысить прозначность ваших бизнес процессов'
+        'IT solutions for your business. Installment automation, warehouse system, ERP solutions. We will reduce the risks of running your business and also help increase the integrity of your business processes'
     },
     {
       name: 'keywords',
       content:
-        'Ican, ican, ICAN, IT, it, IT, company, comp, Automation, Installment plan, Uzbekistan, ERP, Warehouse accounting, IT company, Uz, Ru, En, Loans, urgent payment'
+        'Ican, ican business, Ican business ican, ICAN, IT, it, IT, company, comp, Automation, Installment plan, Uzbekistan, ERP, Warehouse accounting, IT company, Uz, Ru, En, Loans, urgent payment'
     }
   ]
 })
