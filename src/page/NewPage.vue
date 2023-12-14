@@ -151,6 +151,7 @@
 <script>
 import { ref, onMounted } from 'vue'
 import { AboutModal } from '../components'
+// import { useHead } from '@vueuse/head'
 
 export default {
   data() {
@@ -171,6 +172,8 @@ export default {
   },
 
   setup() {
+    
+
     const owlCarousel = ref(null)
     onMounted(() => {
       // eslint-disable-next-line no-undef
