@@ -214,7 +214,7 @@ const closeModal = () => {
   }
 
   .about .img {
-    height: 750px;
+    height: 670px;
     width: 45%;
   }
   @media screen and (min-height: 1100px) {
