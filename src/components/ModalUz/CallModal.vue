@@ -17,7 +17,7 @@
             <div>
               <label for="fullname">Ism Familya</label>
               <input
-                v-model="siteData.fullname"
+                v-model="siteData.full_name"
                 required
                 class="input form-control"
                 type="text"
@@ -28,7 +28,7 @@
             <div>
               <label for="phoneNumber">Tel raqam</label>
               <input
-                v-model="siteData.phoneNumber"
+                v-model="siteData.phone_number"
                 required
                 class="input form-control"
                 type="text"
@@ -60,8 +60,8 @@ import axios from 'axios'
 import { useToast } from 'vue-toastification'
 
 const siteData = ref({
-  fullname: '',
-  phoneNumber: '',
+  full_name: '',
+  phone_number: '',
   message: ''
 })
 const baseURL = 'https://backend.icangroup.uz/api/application'
@@ -70,16 +70,13 @@ const toast = useToast()
 const handleChange = async () => {
   try {
     // eslint-disable-next-line no-unused-vars
-    const { data } = await axios.post(baseURL)
-    toast.success('Your information successfully send')
-    siteData.value.fullname = ''
+    const { data } = await axios.post(baseURL, siteData.value)
+    toast.success(data.message)
+    siteData.value.full_name = ''
     siteData.value.message = ''
-    siteData.value.phoneNumber = ''
+    siteData.value.phone_number = ''
   } catch (error) {
-    toast.error('Your information was not sent successfully. Please try again')
-    // siteData.value.fullname = ''
-    // siteData.value.message = ''
-    // siteData.value.phoneNumber = ''
+    toast.error('You sent an incorrect request, please try again')
   }
 }
 </script>
