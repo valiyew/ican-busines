@@ -434,6 +434,11 @@ const closeModal = () => {
     height: 700px;
     width: 85%;
   }
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 220vh;
+    }
+  }
   @media screen and (min-height: 1100px) {
     .hero {
       height: 140vh;
@@ -546,6 +551,12 @@ const closeModal = () => {
     height: 500px;
     width: 85%;
   }
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 180vh;
+    }
+
+  }
   @media screen and (min-height: 1100px) {
     .hero {
       height: 110vh;
@@ -597,9 +608,14 @@ const closeModal = () => {
     height: 500px;
     width: 85%;
   }
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 180vh;
+    }
+  }
   @media screen and (min-height: 700px) {
     .hero {
-      height: 150vh;
+      height: 160vh;
     }
   }
   @media screen and (min-height: 800px) {

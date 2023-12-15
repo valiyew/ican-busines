@@ -54,6 +54,16 @@ const closeModal = () => {
 </script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .hero {
   height: 100vh;
   width: 100%;
@@ -140,7 +150,7 @@ const closeModal = () => {
 
 .about .img {
   width: 48%;
-  height: 570px;
+  height: 600px;
   background-image: url(../assets/images/aboutImg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -417,6 +427,11 @@ const closeModal = () => {
     height: 700px;
     width: 85%;
   }
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 220vh;
+    }
+  }
   @media screen and (min-height: 1100px) {
     .hero {
       height: 140vh;
@@ -476,7 +491,6 @@ const closeModal = () => {
     .about .img {
       height: 1050px;
     }
-
     .buttons button {
       padding: 25px 10px;
       font-size: 22px;
@@ -530,6 +544,12 @@ const closeModal = () => {
     height: 500px;
     width: 85%;
   }
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 180vh;
+    }
+
+  }
   @media screen and (min-height: 1100px) {
     .hero {
       height: 110vh;
@@ -538,6 +558,7 @@ const closeModal = () => {
     .about .img {
       height: 1050px;
     }
+
     .buttons button {
       padding: 25px 10px;
       font-size: 22px;
@@ -580,9 +601,14 @@ const closeModal = () => {
     height: 500px;
     width: 85%;
   }
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 180vh;
+    }
+  }
   @media screen and (min-height: 700px) {
     .hero {
-      height: 150vh;
+      height: 160vh;
     }
   }
   @media screen and (min-height: 800px) {
@@ -601,7 +627,6 @@ const closeModal = () => {
     }
   }
 }
-
 @media screen and (min-width: 576px) {
   @media screen and (min-height: 700px) {
     .hero {

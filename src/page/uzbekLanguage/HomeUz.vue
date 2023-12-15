@@ -35,7 +35,7 @@ useHead({
     {
       name: 'keywords',
       content:
-        "ican business, ican biznes,Ican biznes, Ican, ican, ICAN, IT, it, IT, companya, company, Avtomatlashtirish, Bo'lib to'lash, O'zbekiston, ERP, Ombor buxgalteriya, IT kompaniyasi, Uz, Ru, En, Kreditlar, shoshilinch to'lov"
+        "ican business,icanbusiness, ican biznes,icanbiznes,Ican biznes, Ican, ican, ICAN, IT, it, IT, companya, company, Avtomatlashtirish, Bo'lib to'lash, O'zbekiston, ERP, Ombor buxgalteriya, IT kompaniyasi, Uz, Ru, En, Kreditlar, shoshilinch to'lov"
     }
   ]
 })
