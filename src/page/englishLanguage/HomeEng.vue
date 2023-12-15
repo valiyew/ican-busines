@@ -34,7 +34,7 @@ useHead({
     {
       name: 'keywords',
       content:
-        'Ican, ican business,icanbusiness, Ican business ican, ICAN, IT, it, IT, company, comp, Automation, Installment plan, Uzbekistan, ERP, Warehouse accounting, IT company, Uz, Ru, En, Loans, urgent payment, business'
+        'Ican, ican business,icanbusiness, Ican business ican,icanbusiness, IcanBusiness, ICANBUSINESS, ican business, Ican Business, ICAN BUSINESS, ican busines, ICAN, IT, it, IT, company, comp, Automation, Installment plan, Uzbekistan, ERP, Warehouse accounting, IT company, Uz, Ru, En, Loans, urgent payment, business'
     }
   ]
 })

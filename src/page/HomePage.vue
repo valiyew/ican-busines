@@ -26,7 +26,7 @@ useHead({
     {
       name: 'keywords',
       content:
-        'ican бусинесс,icanбусинесс, Ican, ican, ICAN, IT, it, Iт, компания, Автоматизация, Рассрочка, Узбекистан, ERP, Складской учёт, Айти компания, Uz, Ру, Ен, Кредиты , срочный платеж'
+        'ican бусинесс,icanбусинесс, icanbusiness, IcanBusiness, ICANBUSINESS, ican business, Ican Business, ICAN BUSINESS, ican busines, Ican, ican, ICAN, IT, it, Iт, компания, Автоматизация, Рассрочка, Узбекистан, ERP, Складской учёт, Айти компания, Uz, Ру, Ен, Кредиты , срочный платеж'
     }
   ]
 })
