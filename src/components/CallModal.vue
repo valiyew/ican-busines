@@ -55,7 +55,7 @@
 
 <script setup>
 import { ref } from 'vue'
-// import axios from 'axios'
+import axios from 'axios'
 import { useToast } from 'vue-toastification'
 
 const siteData = ref({
@@ -63,12 +63,13 @@ const siteData = ref({
   phoneNumber: '',
   message: ''
 })
-
+const baseURL = 'https://backend.icangroup.uz/api/application'
 const toast = useToast()
 
 const handleChange = async () => {
   try {
-    // const { data } = await axios.get()
+    // eslint-disable-next-line no-unused-vars
+    const { data } = await axios.post(baseURL)
     toast.success('Your information successfully send')
     siteData.value.fullname = ''
     siteData.value.message = ''

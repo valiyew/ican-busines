@@ -11,12 +11,13 @@
       </div>
 
       <div class="call">
-        <form action="" @submit.prevent>
+        <form action="" @submit.prevent="handleChange">
           <div class="inputs">
             <div>
               <label for="fullname">Full Name</label>
               <input
                 required
+                v-model="siteData.fullname"
                 class="input form-control"
                 type="text"
                 id="fullname"
@@ -27,16 +28,17 @@
               <label for="phoneNumber">Phone Number</label>
               <input
                 required
+                v-model="siteData.phoneNumber"
                 class="input form-control"
                 type="text"
                 id="phoneNumber"
                 placeholder="Enter phone"
-                value="+998 "
               />
             </div>
             <div>
               <label for="message">Message <span>(optional)</span></label>
               <input
+                v-model="siteData.message"
                 class="input form-control"
                 type="text"
                 id="message"
@@ -51,8 +53,35 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+import axios from 'axios'
+import { useToast } from 'vue-toastification'
 
+const siteData = ref({
+  fullname: '',
+  phoneNumber: '',
+  message: ''
+})
+const baseURL = 'https://backend.icangroup.uz/api/application'
+const toast = useToast()
+
+const handleChange = async () => {
+  try {
+    // eslint-disable-next-line no-unused-vars
+    const { data } = await axios.post(baseURL)
+    toast.success('Your information successfully send')
+    siteData.value.fullname = ''
+    siteData.value.message = ''
+    siteData.value.phoneNumber = ''
+  } catch (error) {
+    toast.error('Your information was not sent successfully. Please try again')
+    // siteData.value.fullname = ''
+    // siteData.value.message = ''
+    // siteData.value.phoneNumber = ''
+  }
+}
+</script>
 <style scoped>
 .modal {
   position: fixed;

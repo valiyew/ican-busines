@@ -7,11 +7,8 @@
     </Transition>
 
     <div class="news" style="margin-top: 100px">
-      <h1 style="transition: 0.5s" v-motion-slide-visible-once-right>Новости</h1>
-      <div
-        style="display: flex; align-items: center; gap: 15px; transition: 0.5s"
-        v-motion-slide-visible-once-left
-      >
+      <h1 style="transition: 0.5s">Новости</h1>
+      <div style="display: flex; align-items: center; gap: 15px; transition: 0.5s">
         <button
           style="
             background: #f5f5f5;
@@ -39,11 +36,7 @@
       </div>
     </div>
     <div class="row">
-      <div
-        class="owl-carousel owl-theme"
-        style="margin-top: 50px; transition: 0.5s"
-        v-motion-slide-visible-once-bottom
-      >
+      <div class="owl-carousel owl-theme" style="margin-top: 50px; transition: 0.5s">
         <div class="item">
           <div class="card" @click="openModal">
             <div class="card-body">
@@ -172,8 +165,6 @@ export default {
   },
 
   setup() {
-    
-
     const owlCarousel = ref(null)
     onMounted(() => {
       // eslint-disable-next-line no-undef
