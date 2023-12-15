@@ -14,28 +14,37 @@
         <form action="" @submit.prevent>
           <div class="inputs">
             <div>
-              <label for="name">Name:</label>
+              <label for="fullname">Full Name</label>
               <input
                 required
                 class="input form-control"
                 type="text"
-                id="name"
-                placeholder="Enter name..."
+                id="fullname"
+                placeholder="Enter fullname"
               />
             </div>
             <div>
-              <label for="phoneNumber">Phone number:</label>
+              <label for="phoneNumber">Phone Number</label>
               <input
                 required
                 class="input form-control"
                 type="text"
                 id="phoneNumber"
-                placeholder="Enter phone..."
+                placeholder="Enter phone"
                 value="+998 "
               />
             </div>
+            <div>
+              <label for="message">Message <span>(optional)</span></label>
+              <input
+                class="input form-control"
+                type="text"
+                id="message"
+                placeholder="Enter message"
+              />
+            </div>
           </div>
-          <button type="submit"><i class="fa-solid fa-phone"></i> Send</button>
+          <button type="submit"><i class="fa-solid fa-phone"></i> Отправить</button>
         </form>
       </div>
     </div>

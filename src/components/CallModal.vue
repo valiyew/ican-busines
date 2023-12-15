@@ -11,27 +11,38 @@
       </div>
 
       <div class="call">
-        <form action="" @submit.prevent>
+        <form action="" @submit.prevent="handleChange">
           <div class="inputs">
             <div>
-              <label for="name">Имя:</label>
+              <label for="fullname">Full Name</label>
               <input
                 required
+                v-model="siteData.fullname"
                 class="input form-control"
                 type="text"
-                id="name"
-                placeholder="Enter name..."
+                id="fullname"
+                placeholder="Enter fullname"
               />
             </div>
             <div>
-              <label for="phoneNumber">Телефонный номер:</label>
+              <label for="phoneNumber">Phone Number</label>
               <input
                 required
+                v-model="siteData.phoneNumber"
                 class="input form-control"
                 type="text"
                 id="phoneNumber"
-                placeholder="Enter phone..."
-                value="+998 "
+                placeholder="Enter phone"
+              />
+            </div>
+            <div>
+              <label for="message">Message <span>(optional)</span></label>
+              <input
+                v-model="siteData.message"
+                class="input form-control"
+                type="text"
+                id="message"
+                placeholder="Enter message"
               />
             </div>
           </div>
@@ -42,11 +53,36 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+// import axios from 'axios'
+import { useToast } from 'vue-toastification'
+
+const siteData = ref({
+  fullname: '',
+  phoneNumber: '',
+  message: ''
+})
+
+const toast = useToast()
+
+const handleChange = async () => {
+  try {
+    // const { data } = await axios.get()
+    toast.success('Your information successfully send')
+    siteData.value.fullname = ''
+    siteData.value.message = ''
+    siteData.value.phoneNumber = ''
+  } catch (error) {
+    toast.error('Your information was not sent successfully. Please try again')
+    // siteData.value.fullname = ''
+    // siteData.value.message = ''
+    // siteData.value.phoneNumber = ''
+  }
+}
+</script>
 
 <style scoped>
-
-
 .modal {
   position: fixed;
   top: 0;
@@ -80,7 +116,7 @@
   font-weight: 500;
 }
 
-.about h1 .check{
+.about h1 .check {
   z-index: 1;
   position: absolute;
   right: 8%;
@@ -149,15 +185,15 @@
     font-size: 25px;
     border: none;
   }
-  
+
   .modal-content .about {
     padding-right: 70px;
   }
-  .about h1{
+  .about h1 {
     font-size: 20px;
   }
-  
-  .about h1 .check{
+
+  .about h1 .check {
     top: 40%;
   }
 }
@@ -169,10 +205,10 @@
     margin-top: 20px;
     width: 500px;
   }
-  .about h1{
+  .about h1 {
     font-size: 35px;
   }
-  .about h1 .check{
+  .about h1 .check {
     top: 35%;
   }
 }

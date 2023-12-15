@@ -15,28 +15,37 @@
         <form action="" @submit.prevent>
           <div class="inputs">
             <div>
-              <label for="name">Ism:</label>
+              <label for="fullname">Ism Familya</label>
               <input
                 required
                 class="input form-control"
                 type="text"
-                id="name"
-                placeholder="Enter name..."
+                id="fullname"
+                placeholder="Ism Familya"
               />
             </div>
             <div>
-              <label for="phoneNumber">Telefon raqam:</label>
+              <label for="phoneNumber">Tel raqam</label>
               <input
                 required
                 class="input form-control"
                 type="text"
                 id="phoneNumber"
-                placeholder="Enter phone..."
+                placeholder="Tel raqam"
                 value="+998 "
               />
             </div>
+            <div>
+              <label for="message">Habar <span>(ixtiyoriy)</span></label>
+              <input
+                class="input form-control"
+                type="text"
+                id="message"
+                placeholder="Habar"
+              />
+            </div>
           </div>
-          <button type="submit"><i class="fa-solid fa-phone"></i> Yuborish</button>
+          <button type="submit"><i class="fa-solid fa-phone"></i> Отправить</button>
         </form>
       </div>
     </div>
