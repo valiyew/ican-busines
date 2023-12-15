@@ -46,7 +46,13 @@
 
   <div class="navbar">
     <ul>
-      <img :class="{ remove: openMain }" src="../../assets/images/Vector.svg" alt="" />
+      <img
+        @click="reloadFN"
+        style="cursor: pointer"
+        :class="{ remove: openMain }"
+        src="../../assets/images/Vector.svg"
+        alt=""
+      />
       <li style="margin-left: 30px">
         <img src="../../assets/images/agenda.svg" alt="" /> <span>About the product </span>
       </li>
@@ -81,6 +87,10 @@
 <script setup>
 import { ref } from 'vue'
 import SelectComponent from '../SelectComponent.vue'
+
+const reloadFN = () => {
+  window.location.reload()
+}
 
 const partModal = ref(false)
 const openPart = () => {

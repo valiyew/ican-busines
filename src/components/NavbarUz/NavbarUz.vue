@@ -46,7 +46,13 @@
 
   <div class="navbar">
     <ul>
-      <img :class="{ remove: openMain }" src="../../assets/images/Vector.svg" alt="" />
+      <img
+        @click="reloadFN"
+        style="cursor: pointer"
+        :class="{ remove: openMain }"
+        src="../../assets/images/Vector.svg"
+        alt=""
+      />
       <li style="margin-left: 30px">
         <img src="../../assets/images/agenda.svg" alt="" /> <span>Mahsulot haqida </span>
       </li>
@@ -67,7 +73,7 @@
     </ul>
 
     <div class="language" :class="{ remove: openMain }">
-      <SelectComponent  />
+      <SelectComponent />
 
       <span><a href="#contact">Biz bilan bog'lanish </a></span>
 
@@ -83,6 +89,10 @@
 <script setup>
 import { ref } from 'vue'
 import SelectComponent from '../SelectComponent.vue'
+
+const reloadFN = () => {
+  window.location.reload()
+}
 
 const partModal = ref(false)
 const openPart = () => {
@@ -107,7 +117,7 @@ const openSidebar = () => {
 }
 const closeSidebar = () => {
   document.body.style.overflow = 'auto'
-  
+
   openMain.value = false
 }
 </script>
