@@ -146,9 +146,12 @@ const handleChange = async () => {
   font-size: 20px;
 }
 
+.inputs label{
+  font-size: 20px;
+}
 .inputs input {
   font-family: 'TT Firs Neue';
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   padding: 15px;
 }
