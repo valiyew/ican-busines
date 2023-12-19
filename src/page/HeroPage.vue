@@ -151,7 +151,7 @@ const closeModal = () => {
 .about .img {
   width: 48%;
   height: 600px;
-  /* background-image: url(../assets/images/aboutImg.png); */
+  background-image: url(../assets/images/aboutImg.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
