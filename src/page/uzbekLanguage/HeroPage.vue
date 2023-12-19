@@ -236,10 +236,10 @@ const closeModal = () => {
   }
   @media screen and (min-height: 600px) {
     .hero {
-      height: 110vh;
+      height: 115vh;
     }
     .about .img {
-      height: 540px;
+      height: 550px;
     }
   }
   @media screen and (min-height: 700px) {
