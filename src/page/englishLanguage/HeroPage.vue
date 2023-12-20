@@ -227,7 +227,7 @@ const closeModal = () => {
       height: 115vh;
     }
     .about .img {
-      height: 550px;
+      height: 520px;
     }
   }
   @media screen and (min-height: 700px) {
@@ -259,7 +259,7 @@ const closeModal = () => {
 }
 @media screen and (max-width: 1500px) {
   .about .img {
-    height: 650px;
+    height: 600px;
   }
   @media screen and (min-height: 1100px) {
     .about .img {
@@ -321,6 +321,14 @@ const closeModal = () => {
     height: 650px;
     width: 45%;
   }
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 115vh;
+    }
+    .about .img {
+      height: 600px;
+    }
+  }
   @media screen and (min-height: 1100px) {
     .about .img {
       height: 930px;
@@ -379,6 +387,14 @@ const closeModal = () => {
   .about .img {
     height: 630px;
     width: 50%;
+  }
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 115vh;
+    }
+    .about .img {
+      height: 600px;
+    }
   }
   @media screen and (min-height: 1100px) {
     .about .img {
@@ -511,6 +527,15 @@ const closeModal = () => {
 @media screen and (max-width: 876px) {
   .hero {
     height: 160vh;
+  }
+
+  @media screen and (min-height: 600px) {
+    .hero {
+      height: 200vh;
+    }
+    .about .img {
+      height: 530px;
+    }
   }
 
   @media screen and (min-height: 1100px) {
