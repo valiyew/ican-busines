@@ -66,7 +66,7 @@
         </button>
       </div>
       <div class="img">
-        <!-- <img src="../assets/images/macBook2.png" alt="" /> -->
+        <img src="../assets/images/macBook2.png" alt="" />
       </div>
     </div>
   </div>
