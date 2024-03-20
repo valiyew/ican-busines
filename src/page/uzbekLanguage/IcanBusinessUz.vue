@@ -4,18 +4,19 @@
       <div class="title" style="transition: 0.5s">
         <div class="about">
           <h1>
-            <span>Ican biznes nima? </span>
+            <span>ICAN BUSINESS nima? </span>
             <img class="check" src="../../assets/images/check.svg" alt="" />
           </h1>
-          <div class="absaluteBox">bozorda 10 yildan ortiq</div>
+          <div class="absaluteBox">bozorda 5 yildan ortiq</div>
         </div>
         <p class="aboutText">
-          Bizning veb-saytimiz xavfsiz saqlash va inventarizatsiyani samarali boshqarish imkonini
-          beradi😊.
+          ICAN BUSINESS dasturiy ta'minoti kredit tashkilotlarini avtomatlashtiradigan, kredit
+          tashkilotlarini to'liq avtomatlashtiradigan, to'lovlar va qarzlarni o'z vaqtida to'lashga
+          yordam beradigan, firibgarlardan himoya qiluvchi va xodimlaringiz ustidan nazoratni
+          kafolatlaydigan dasturdir.
           <br />
           <br />
-          Tovarlaringiz va maʼlumotlaringizni maksimal darajada himoya qilish uchun innovatsion
-          yechimlarimizdan foydalaning ⚡.
+          Biznes foydasini oshirish uchun innovatsion yechimlarimizdan foydalaning.
         </p>
         <a href="tel:+998781137400">
           <button class="callBtn">
@@ -70,7 +71,7 @@
   font-size: 30px;
   font-weight: 600;
 }
-.about .aboutText {
+.aboutText {
   font-family: 'TT Firs Neue';
   color: #5d5d5f;
   font-size: 14px;

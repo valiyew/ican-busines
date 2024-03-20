@@ -2,11 +2,13 @@
   <ul class="footer">
     <div>
       <p>Manzil</p>
-      <li>Sh.Toshkent, K.Shahrisabz 16A</li>
+      <li>Toshkent.Sh, Mustaqillik shoh ko‘chasi, 79A</li>
     </div>
     <div>
-      <p>Tel raqam:</p>
-      <li>+998 93 982 50 01</li>
+      <p>Tel raqam</p>
+      <a href="tel:++998781137400">
+        <li>+998 78 113 74 00</li>
+      </a>
     </div>
     <div>
       <p>Elektron pochta</p>
@@ -15,10 +17,15 @@
     <div>
       <p>Ijtimoiy tarmoq</p>
       <div class="contacts">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <a href="https://www.instagram.com/ican_business.uz/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://t.me/icangroupuz" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://www.youtube.com/@iCANGROUP" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
       </div>
     </div>
   </ul>
@@ -46,7 +53,7 @@ export default {}
 }
 .footer li {
   font-family: 'TT Firs Neue';
-  
+
   list-style: none;
   font-size: 18px;
   font-weight: 500;
@@ -60,7 +67,7 @@ export default {}
 
 .muallif {
   font-family: 'TT Firs Neue';
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,7 +115,6 @@ export default {}
   }
   .muallif {
     flex-direction: row;
-    
   }
 }
 

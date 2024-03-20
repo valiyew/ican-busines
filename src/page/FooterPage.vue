@@ -2,23 +2,30 @@
   <ul class="footer">
     <div>
       <p>Местоположение</p>
-      <li>Г.Ташкент, У.Шахрисабз 16А</li>
+      <li>Г.Ташкент, проспект Мустакиллик, 79А</li>
     </div>
     <div>
-      <p>Тел.номер:</p>
-      <li>+998 93 982 50 01</li>
+      <p>Тел номер</p>
+      <a href="tel:+998781137400">
+        <li>+998 78 113 74 00</li>
+      </a>
     </div>
     <div>
       <p>Эл.адрес</p>
       <li>info@icangroup.uz</li>
     </div>
     <div>
-      <p>Социальная сеть</p>
+      <p>Cоц сеть</p>
       <div class="contacts">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <a href="https://www.instagram.com/ican_business.uz/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://t.me/icangroupuz" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://www.youtube.com/@iCANGROUP" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
       </div>
     </div>
   </ul>
@@ -85,7 +92,6 @@ export default {}
   }
   .footer .contacts {
     gap: 20px;
-    margin-top: 5px;
   }
 
   .muallif p {

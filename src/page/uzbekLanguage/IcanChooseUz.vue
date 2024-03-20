@@ -1,8 +1,8 @@
 <template>
   <div id="choose" class="icanShooseBox">
-    <div style="transition: 0.5s" class="about" >
+    <div style="transition: 0.5s" class="about">
       <h1 style="display: flex">
-        <span>Nima uchun ican biznesini tanlaysiz </span>
+        <span>Nima uchun ICAN BUSINESSni tanlaysiz</span>
         <img class="check" src="../../assets/images/check.svg" alt="" />
       </h1>
       <div class="absaluteBox">hamma narsa mantiqiy</div>
@@ -10,13 +10,12 @@
 
     <div class="icanChoose">
       <div class="left">
-        <div style="transition: 0.5s" class="a" >
+        <div style="transition: 0.5s" class="a">
           <div class="title">
-            <h2>Barcha boshqaruv vositalari onlayn</h2>
+            <h2>Biznesni avtomatlashtirishning barcha vositalari</h2>
             <p style="margin-top: 20px">
-              Ilova qulay va ishlatish uchun qulay interfeysga ega bo'lib, har qanday narsani amalga
-              oshirishga imkon beradi shartnomani imzolashda qiyinchiliklar. Endi siz sherigingiz
-              bilan yuzma-yuz uchrashasiz bitimni muhrlash.
+              Bizning platformamiz orqali siz o'z biznesingizni masofadan turib kuzatishingiz va
+              boshqarishingiz mumkin bo'ladi.
             </p>
             <a href="tel:+998781137400">
               <button class="callBtn">
@@ -28,11 +27,15 @@
           <img style="border-radius: 15px" src="../../assets/images/imgA.png" alt="" />
         </div>
 
-        <div style="transition: 0.5s" class="AandBSection" >
+        <div style="transition: 0.5s" class="AandBSection">
           <div class="b" style="position: relative; height: 350px">
             <div style="width: 100%">
-              <h2>Barqarorlik omborini boshqarish</h2>
-              <p style="margin-top: 20px">Barqarorlikni boshqarish</p>
+              <h2>Firibgarlikdan himoya qilish</h2>
+              <p style="margin-top: 20px">
+                Skorlash mijozni tahlil qilish imkonini beradi <br />
+                bo'lib-bo'lib olish uchun ariza berishdan oldin. <br />
+                Va bu kredit tarixi yomon bo'lgan mijozni aniqlash imkonini beradi.
+              </p>
             </div>
             <img
               class="absoluteImg"
@@ -43,8 +46,10 @@
           </div>
           <div class="c" style="position: relative; height: 350px">
             <div style="width: 100%">
-              <h2>Barqarorlik omborini boshqarish</h2>
-              <p style="margin-top: 20px">Barqarorlikni boshqarish</p>
+              <h2>Xodimlar ustidan to'liq nazorat</h2>
+              <p style="margin-top: 20px">
+                Siz xodimlar va filiallar ustidan to'liq nazoratga ega bo'lasiz
+              </p>
             </div>
             <img
               class="absoluteImg"
@@ -58,8 +63,11 @@
       <div style="transition: 0.5s" class="right">
         <div class="sklad">
           <div>
-            <h2>Barqarorlik omborini boshqarish</h2>
-            <p style="margin-top: 20px">Barqarorlikni boshqarish</p>
+            <h2>Mijozlarning qarzlarini o'z vaqtida undirish</h2>
+            <p style="margin-top: 20px">
+              ICAN BUSINESS platformasi orqali kredit to'lovlari <br />
+              o'z vaqtida va yig'iladi bu bilan qarzdor mijozlarning ko'payishining oldini oladi
+            </p>
           </div>
           <img src="../../assets/images/skladImg.png" alt="" />
         </div>

@@ -1,7 +1,8 @@
 <template>
-  <h1 style="margin-top: 80px; transition: 0.5s" >Наши партнеры</h1>
+  <h1 style="margin-top: 80px; transition: 0.5s">Наши партнеры</h1>
+  <h2>Это более 1000 кредитных организаций по всей республике</h2>
 
-  <div  class="wrapper">
+  <div class="wrapper">
     <div class="slider" style="margin-top: 50px">
       <div class="slide-track">
         <div class="slide">
@@ -104,6 +105,14 @@ h1 {
   text-align: center;
   font-size: 35px;
   font-weight: 600;
+  font-family: 'TT Firs Neue';
+}
+
+h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
   font-family: 'TT Firs Neue';
 }
 

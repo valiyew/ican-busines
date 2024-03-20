@@ -2,7 +2,7 @@
   <div id="choose" class="icanShooseBox">
     <div style="transition: 0.5s" class="about">
       <h1 style="display: flex">
-        <span>Why choose ican business </span>
+        <span>Why choose ICAN BUSINESS </span>
         <img class="check" src="../../assets/images/check.svg" alt="" />
       </h1>
       <div class="absaluteBox">everything is reasonable</div>
@@ -12,11 +12,9 @@
       <div class="left">
         <div style="transition: 0.5s" class="a">
           <div class="title">
-            <h2>All management tools online</h2>
+            <h2>All business automation tools</h2>
             <p style="margin-top: 20px">
-              The application has a convenient and easy-to-use interface that allows you to any
-              difficulties in signing the contract. Now you are dating your partner face to face to
-              seal the deal.
+              Through our platform you will be able to monitor and manage your business remotely.
             </p>
             <a href="tel:+998781137400">
               <button class="callBtn">
@@ -31,8 +29,12 @@
         <div style="transition: 0.5s" class="AandBSection">
           <div class="b" style="position: relative; height: 385px">
             <div style="width: 100%">
-              <h2>Stability warehouse management</h2>
-              <p style="margin-top: 20px">Stability management</p>
+              <h2>Fraud protection</h2>
+              <p style="margin-top: 20px">
+                Scoring allows you to analyze the client before <br />
+                applying for installments. And it makes it possible to identify a client <br />
+                with a bad credit history.
+              </p>
             </div>
             <img
               class="absoluteImg"
@@ -43,8 +45,8 @@
           </div>
           <div class="c" style="position: relative; height: 385px">
             <div style="width: 100%">
-              <h2>Stability warehouse management</h2>
-              <p style="margin-top: 20px">Stability management</p>
+              <h2>Full control over employees</h2>
+              <p style="margin-top: 20px">You will have full control over employees and branches</p>
             </div>
             <img
               class="absoluteImg"
@@ -58,8 +60,11 @@
       <div style="transition: 0.5s" class="right">
         <div class="sklad">
           <div>
-            <h2>Stability warehouse management</h2>
-            <p style="margin-top: 20px">Stability management</p>
+            <h2>Timely collection of customer debts</h2>
+            <p style="margin-top: 20px">
+              Loan payments through the ICAN BUSINESS <br />
+              platform are collected on time and thereby preventing the increase in debtor clients
+            </p>
           </div>
           <img src="../../assets/images/skladImg.png" alt="" />
         </div>

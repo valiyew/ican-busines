@@ -1,5 +1,6 @@
 <template>
-  <h1 style="margin-top: 80px; transition: 0.5s" >Our partners</h1>
+  <h1 style="margin-top: 80px; transition: 0.5s">Our partners</h1>
+  <h2>These are more than 1000 credit institutions throughout the republic</h2>
 
   <div class="wrapper">
     <div class="slider" style="margin-top: 50px">
@@ -104,6 +105,14 @@ h1 {
   text-align: center;
   font-size: 35px;
   font-weight: 600;
+  font-family: 'TT Firs Neue';
+}
+
+h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
   font-family: 'TT Firs Neue';
 }
 

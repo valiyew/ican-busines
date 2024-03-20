@@ -11,10 +11,10 @@
     <div class="about">
       <div class="title">
         <div>
-          <h1>Yuqori darajada xavfsiz va ishonchli ombor tizimi</h1>
+          <h1>Tayyor echimlar yordamida to'lash jarayonlarini avtomatlashtirish</h1>
           <p>
-            iCan Business biznes uchun yaratilgan yuqori darajada xavfsiz va ishonchli ombor
-            platformasini taqdim etadi.
+            ICan Business tovar va xizmatlarni biznes bo'yicha to'lab sotib olish uchun yuqori
+            darajada xavfsiz va ishonchli platformani taqdim etadi.
           </p>
         </div>
         <div class="buttons">

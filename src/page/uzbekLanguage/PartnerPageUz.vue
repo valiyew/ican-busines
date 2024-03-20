@@ -1,5 +1,6 @@
 <template>
-  <h1 style="margin-top: 80px; transition: 0.5s" >Bizning hamkorlarimiz</h1>
+  <h1 style="margin-top: 80px; transition: 0.5s">Bizning hamkorlarimiz</h1>
+  <h2>Bular respublika bo'yicha 1000 dan ortiq kredit tashkilotlaridir</h2>
 
   <div class="wrapper">
     <div class="slider" style="margin-top: 50px">
@@ -97,14 +98,20 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style scoped>
 h1 {
   text-align: center;
   font-size: 35px;
   font-weight: 600;
+  font-family: 'TT Firs Neue';
+}
+h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
   font-family: 'TT Firs Neue';
 }
 

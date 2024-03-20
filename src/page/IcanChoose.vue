@@ -2,7 +2,7 @@
   <div id="choose" class="icanShooseBox">
     <div style="transition: 0.5s" class="about">
       <h1 style="display: flex">
-        <span>Почему выбирают ican business</span>
+        <span>Почему выбирают ICAN BUSINESS</span>
         <img class="check" src="../assets/images/check.svg" alt="" />
       </h1>
       <div class="absaluteBox">все обоснованно</div>
@@ -12,11 +12,9 @@
       <div class="left">
         <div style="transition: 0.5s" class="a">
           <div class="title">
-            <h2>Все инструменты для управление онлайн</h2>
+            <h2>Все инструменты для автоматизации бизнеса</h2>
             <p style="margin-top: 20px">
-              Приложение имеет удобный и простой в использовании интерфейс, который позволяет без
-              каких-либо затруднений подписать договор. Теперь вы встречаетесь со своим партнером
-              лицом к лицу, чтобы заключить сделку.
+              Через нашу платформу вы сможете контролировать и управлять своим бизнесом удаленно.
             </p>
             <a href="tel:+998781137400">
               <button class="callBtn">
@@ -31,8 +29,12 @@
         <div style="transition: 0.5s" class="AandBSection">
           <div class="b" style="position: relative; height: 350px">
             <div style="width: 100%">
-              <h2>Стабильность управление складами</h2>
-              <p style="margin-top: 20px">Стабильность управление</p>
+              <h2>Защита от мошенников</h2>
+              <p style="margin-top: 20px">
+                Cкоринг позволяет проводить анализ клиента <br />
+                перед оформлением рассрочки. И дает возможность определить клиента с плохой
+                кредитной историей.
+              </p>
             </div>
             <img
               class="absoluteImg"
@@ -43,8 +45,10 @@
           </div>
           <div class="c" style="position: relative; height: 350px">
             <div style="width: 100%">
-              <h2>Стабильность управление складами</h2>
-              <p style="margin-top: 20px">Стабильность управление</p>
+              <h2>Полный контроль над сотрудниками</h2>
+              <p style="margin-top: 20px">
+                Вы будете иметь полный контроль над сотрудниками и филиалами
+              </p>
             </div>
             <img
               class="absoluteImg"
@@ -58,8 +62,11 @@
       <div style="transition: 0.5s" class="right" ht>
         <div class="sklad">
           <div>
-            <h2>Стабильность управление складами</h2>
-            <p style="margin-top: 20px">Стабильность управление</p>
+            <h2>Вовремя взыскание долгов клиентов</h2>
+            <p style="margin-top: 20px">
+              Платежи по кредиту через платформу ICAN BUSINESS взыскиваются вовремя и тем <br />
+              самым предотвращают увеличение клиентов-должников
+            </p>
           </div>
           <img src="../assets/images/skladImg.png" alt="" />
         </div>

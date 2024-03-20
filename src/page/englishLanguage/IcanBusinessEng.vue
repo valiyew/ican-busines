@@ -4,17 +4,17 @@
       <div class="title" style="transition: 0.5s">
         <div class="about">
           <h1>
-            <span>What is ican business? </span>
+            <span>What is ICAN BUSINESS? </span>
             <img class="check" src="../../assets/images/check.svg" alt="" />
           </h1>
-          <div class="absaluteBox">more than 10 years on the market</div>
+          <div class="absaluteBox">more than 5 years on the market</div>
         </div>
         <p class="aboutText">
-          Our website provides secure storage and efficient inventory management😊.
+          ICAN BUSINESS software is a program that automates credit institutions, fully automates
+          credit institutions, helps pay off payments and debts on time, protects against
+          fraudsters, and guarantees control of your employees. <br />
           <br />
-          <br />
-          Take advantage of our innovative solutions for maximum protection of your goods and data
-          ⚡.
+          Take advantage of our innovative solutions to maximize business profits.
         </p>
         <a href="tel:+998781137400">
           <button class="callBtn">
@@ -66,7 +66,7 @@
   font-size: 30px;
   font-weight: 600;
 }
-.about .aboutText {
+.aboutText {
   font-family: 'TT Firs Neue';
   color: #5d5d5f;
   font-size: 14px;

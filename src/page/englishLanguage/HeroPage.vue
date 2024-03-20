@@ -11,9 +11,10 @@
     <div class="about">
       <div class="title">
         <div>
-          <h1>Highly secure and reliable warehouse system</h1>
+          <h1>Automation of installment processes using ready-made solutions</h1>
           <p>
-            iCan Business provides a highly secure and reliable storage platform built for business.
+            ICan Business presents a highly secure and reliable platform for business installment
+            purchases of goods and services.
           </p>
         </div>
         <div class="buttons">
